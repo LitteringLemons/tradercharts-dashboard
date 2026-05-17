@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Trading Charts Dashboard</title>
+
+  <style>
+
+    body {
+      background-color: #0d1117;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+      gap: 25px;
+    }
+
+    .chart-card {
+      background-color: #161b22;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    }
+
+    .chart-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .chart-title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .timestamp {
+      font-size: 14px;
+      color: #8b949e;
+    }
+
+    .chart-image {
+      width: 100%;
+      border-radius: 8px;
+      border: 1px solid #30363d;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <h1>Trading Charts Dashboard</h1>
+
+  <div class="grid">
+
+    <!-- EURUSD -->
+    <div class="chart-card">
+      <div class="chart-header">
+        <div class="chart-title">EURUSD 5 Minute</div>
+        <div class="timestamp" id="eurusd5m-time"></div>
+      </div>
+      <img class="chart-image" id="eurusd5m" src="">
+    </div>
+
+    <div class="chart-card">
+      <div class="chart-header">
+        <div class="chart-title">EURUSD 15 Minute</div>
+        <div class="timestamp" id="eurusd15m-time"></div>
+      </div>
+      <img class="chart-image" id="eurusd15m" src="">
+    </div>
+
+    <!-- GBPUSD -->
+    <div class="chart-card">
+      <div class="chart-header">
+        <div class="chart-title">GBPUSD 5 Minute</div>
+        <div class="timestamp" id="gbpusd5m-time"></div>
+      </div>
+      <img class="chart-image" id="gbpusd5m" src="">
+    </div>
+
+    <div class="chart-card">
+      <div class="chart-header">
+        <div class="chart-title">GBPUSD 15 Minute</div>
+        <div class="timestamp" id="gbpusd15m-time"></div>
+      </div>
+      <img class="chart-image" id="gbpusd15m" src="">
+    </div>
+
+    <!-- USDJPY -->
+    <div class="chart-card">
+      <div class="chart-header">
+        <div class="chart-title">USDJPY 5 Minute</div>
+        <div class="timestamp" id="usdjpy5m-time"></div>
+      </div>
+      <img class="chart-image" id="usdjpy5m" src="">
+    </div>
+
+    <div class="chart-card">
+      <div class="chart-header">
+        <div class="chart-title">USDJPY 15 Minute</div>
+        <div class="timestamp" id="usdjpy15m-time"></div>
+      </div>
+      <img class="chart-image" id="usdjpy15m" src="">
+    </div>
+
+    <!-- BTCUSD -->
+    <div class="chart-card">
+      <div class="chart-header">
+        <div class="chart-title">BTCUSD 5 Minute</div>
+        <div class="timestamp" id="btcusd5m-time"></div>
+      </div>
+      <img class="chart-image" id="btcusd5m" src="">
+    </div>
+
+    <div class="chart-card">
+      <div class="chart-header">
+        <div class="chart-title">BTCUSD 15 Minute</div>
+        <div class="timestamp" id="btcusd15m-time"></div>
+      </div>
+      <img class="chart-image" id="btcusd15m" src="">
+    </div>
+
+    <!-- XAUUSD -->
+    <div class="chart-card">
+      <div class="chart-header">
+        <div class="chart-title">XAUUSD 5 Minute</div>
+        <div class="timestamp" id="xauusd5m-time"></div>
+      </div>
+      <img class="chart-image" id="xauusd5m" src="">
+    </div>
+
+    <div class="chart-card">
+      <div class="chart-header">
+        <div class="chart-title">XAUUSD 15 Minute</div>
+        <div class="timestamp" id="xauusd15m-time"></div>
+      </div>
+      <img class="chart-image" id="xauusd15m" src="">
+    </div>
+
+  </div>
+
+  <script>
+
+    function refreshImages() {
+
+      const timestamp = new Date().getTime();
+      const readableTime = new Date().toLocaleTimeString();
+
+      const charts = [
+        'eurusd5m',
+        'eurusd15m',
+        'gbpusd5m',
+        'gbpusd15m',
+        'usdjpy5m',
+        'usdjpy15m',
+        'btcusd5m',
+        'btcusd15m',
+        'xauusd5m',
+        'xauusd15m'
+      ];
+
+      charts.forEach(chart => {
+
+        const imageElement = document.getElementById(chart);
+
+        imageElement.src = `${chart.replace(/([0-9])/,'_$1').replace('btcusd','btcusd').replace('xauusd','xauusd')}.png?t=${timestamp}`;
+
+        document.getElementById(`${chart}-time`).innerText =
+          `Updated ${readableTime}`;
+      });
+    }
+
+    refreshImages();
+
+    setInterval(refreshImages, 60000);
+
+  </script>
+
+</body>
+
+</html>
