@@ -1,3 +1,13 @@
-2026/05/18-15:30:04.805 72b2 Reusing MANIFEST /home/kidintheflannel/tradingcharts/userdata/Default/Local Storage/leveldb/MANIFEST-000001
-2026/05/18-15:30:04.873 72b2 Recovering log #9
-2026/05/18-15:30:04.874 72b2 Reusing old log /home/kidintheflannel/tradingcharts/userdata/Default/Local Storage/leveldb/000009.log 
+2026/05/18-15:45:05.327 7377 Reusing MANIFEST /home/kidintheflannel/tradingcharts/userdata/Default/Local Storage/leveldb/MANIFEST-000001
+2026/05/18-15:45:05.369 7377 Recovering log #9
+2026/05/18-15:45:05.370 7377 Level-0 table #12: started
+2026/05/18-15:45:05.428 7377 Level-0 table #12: 7206 bytes OK
+2026/05/18-15:45:05.458 7377 Delete type=0 #9
+2026/05/18-15:45:05.510 7377 Compacting 4@0 + 0@1 files
+2026/05/18-15:45:05.522 7377 Generated table #14@0: 20 keys, 958 bytes
+2026/05/18-15:45:05.522 7377 Compacted 4@0 + 0@1 files => 958 bytes
+2026/05/18-15:45:05.533 7377 compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/05/18-15:45:05.533 7377 Delete type=2 #3
+2026/05/18-15:45:05.533 7377 Delete type=2 #7
+2026/05/18-15:45:05.533 7377 Delete type=2 #10
+2026/05/18-15:45:05.533 7377 Delete type=2 #12
