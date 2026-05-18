@@ -1215,3 +1215,213 @@ After doing this, you may fix the identity used for this commit with:
  create mode 100644 userdata/Default/Code Cache/js/93bc1aadcef59ed1_0
 To https://github.com/LitteringLemons/tradercharts-dashboard.git
    0f88d04..d8d1d85  main -> main
+[main 1bee365] Auto-update charts
+ Committer: kidintheflannel <kidintheflannel@penguin>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 306 files changed, 111 insertions(+), 50 deletions(-)
+ create mode 100644 userdata/Default/Cache/Cache_Data/007be055e5a4f239_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/05074f0c095b54e3_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/06073a0f9b86b9f6_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/06a6896c661ae0aa_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/06db4ef7f9125a93_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/07d8f930cff9b19f_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/0ba87c0540cfd746_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/0d1a9be2baf51998_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/1011c8ce5c57764a_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/1307937a20613978_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/1315a9913a212c0d_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/1519f2d72c164325_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/164c6b666998bdbe_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/1828fe652f4208ad_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/1ec6e827d1428188_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/1f3969ba4e7b0241_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/1f4555e85f6d28f8_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/1fc19477f4ac89f0_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/2bdac3080e77ebc3_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/2ed48219dca6a945_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/3078dceaddaaf0e2_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/31e47bdfacfb7924_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/3a3b0d60f4f5738b_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/45cf117533d28c57_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/48228a0d9029f223_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/4e438bc30db1268e_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/50a064cc51a5777a_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/5214b199d6515e45_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/54a7d95b215463e4_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/559a6ff7c4d29244_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/57755a870ae8b5e9_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/5a0d48e7bdf295f4_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/5b96bf4d55577673_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/605fbc10a426b558_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/6097ff1c756ccec1_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/666d67c4f1a53e27_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/681eb716862f9977_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/692b61ef5b9e8207_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/6933c4bb8777ec79_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/6a87241364659253_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/6aa7d98d68f4f1ff_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/6b15a2878be4e3e3_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/6fa48cf3aa056bec_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/78f459f8aa9b6b54_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/79fca7f4f54a836f_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/7caaeac3ac036354_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/8328065974c707a4_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/8ed9b52cd02abbbc_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/8f7a581d583a2b21_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/8fae869a2007e641_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/920bf9cc9fdf4c8e_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/93a0994614a9f572_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/997b35d66d2e5d71_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/9b94fd9889b7ad01_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/a62524a7d02aa1c3_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/aac2510e8f29d8c0_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/abbba48a60c475a1_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/b181d2ceabf82d66_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/b33ea9e9856bd89b_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/b376f55cd0e28d95_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/bc46c329c8bceea9_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/bcc247dabeaa2733_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/bf3ae778eccec7de_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/c62588101b854f79_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/c8077f77f66ce1b3_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/cb75221644909eb3_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/ccaca76f7008c42a_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/cddb196945e6176e_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/d3d5f15471c9d801_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/d424d8fa6415f765_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/da26b79b092e2752_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/daebbc959072e6f7_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/db32fcd94dd8e08e_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/de5a66efb6627e0b_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/e59757b3d79fe98d_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/e84fbced1a9b4e46_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/e96cfa1b444f8e50_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/f113818d9756e6a3_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/f18cd717d8db977c_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/fce4e1df97f9b719_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/fd4a106991557926_0
+ create mode 100644 userdata/Default/Code Cache/js/010d00bdc42d15f0_0
+ create mode 100644 userdata/Default/Code Cache/js/01f25f7ce028b922_0
+ create mode 100644 userdata/Default/Code Cache/js/0b4ee7f04a436a2d_0
+ create mode 100644 userdata/Default/Code Cache/js/0d600200a23da57c_0
+ create mode 100644 userdata/Default/Code Cache/js/0dc3f9dc3ef6923d_0
+ create mode 100644 userdata/Default/Code Cache/js/0fad1290af1fdafa_0
+ create mode 100644 userdata/Default/Code Cache/js/11b9512a04545e62_0
+ create mode 100644 userdata/Default/Code Cache/js/11f9307059e161a8_0
+ create mode 100644 userdata/Default/Code Cache/js/1347d39f3b9a8e16_0
+ create mode 100644 userdata/Default/Code Cache/js/162c52ac54552d15_0
+ create mode 100644 userdata/Default/Code Cache/js/188d5db564d97ba4_0
+ create mode 100644 userdata/Default/Code Cache/js/1ac33937b11c5710_0
+ create mode 100644 userdata/Default/Code Cache/js/1b2eeb0ff28a0fc9_0
+ create mode 100644 userdata/Default/Code Cache/js/1bca242de6a82c09_0
+ create mode 100644 userdata/Default/Code Cache/js/1c9e83681e5cc7ff_0
+ create mode 100644 userdata/Default/Code Cache/js/1df68ceb6a0f5f06_0
+ create mode 100644 userdata/Default/Code Cache/js/20459dcb37e36d9f_0
+ create mode 100644 userdata/Default/Code Cache/js/23ccaf1dd51a41a0_0
+ create mode 100644 userdata/Default/Code Cache/js/25b3ec25d5fda2f9_0
+ create mode 100644 userdata/Default/Code Cache/js/28d78844218fe549_0
+ create mode 100644 userdata/Default/Code Cache/js/2eec053bea0e5e60_0
+ create mode 100644 userdata/Default/Code Cache/js/2f3382f88d052346_0
+ create mode 100644 userdata/Default/Code Cache/js/3123d97417364e2b_0
+ create mode 100644 userdata/Default/Code Cache/js/31cebbf021170925_0
+ create mode 100644 userdata/Default/Code Cache/js/32e3a5cbb72487c5_0
+ create mode 100644 userdata/Default/Code Cache/js/339f5fd6a78da321_0
+ create mode 100644 userdata/Default/Code Cache/js/345b0ec79ef841c5_0
+ create mode 100644 userdata/Default/Code Cache/js/35414eb22512f220_0
+ create mode 100644 userdata/Default/Code Cache/js/354f9dcfea90a463_0
+ create mode 100644 userdata/Default/Code Cache/js/3660703eed85aa60_0
+ create mode 100644 userdata/Default/Code Cache/js/36e5763b929edd42_0
+ create mode 100644 userdata/Default/Code Cache/js/3b231289220efa3d_0
+ create mode 100644 userdata/Default/Code Cache/js/3b8563e60077816c_0
+ create mode 100644 userdata/Default/Code Cache/js/3f3a1c2f6b900aa0_0
+ create mode 100644 userdata/Default/Code Cache/js/40bcb7c5a8dc73c3_0
+ create mode 100644 userdata/Default/Code Cache/js/40fb1580843a5d47_0
+ create mode 100644 userdata/Default/Code Cache/js/41498cfab7343711_0
+ create mode 100644 userdata/Default/Code Cache/js/42baa54843147d2c_0
+ create mode 100644 userdata/Default/Code Cache/js/44b73fa8e90b3aba_0
+ create mode 100644 userdata/Default/Code Cache/js/46b76ba70eb27493_0
+ create mode 100644 userdata/Default/Code Cache/js/48c53028c27a2fd4_0
+ create mode 100644 userdata/Default/Code Cache/js/4b18e97dee291b66_0
+ create mode 100644 userdata/Default/Code Cache/js/4e085927d5c9bd89_0
+ create mode 100644 userdata/Default/Code Cache/js/4eec1536fa1da706_0
+ create mode 100644 userdata/Default/Code Cache/js/50d3ef40a9adb01f_0
+ create mode 100644 userdata/Default/Code Cache/js/50e041af08f71255_0
+ create mode 100644 userdata/Default/Code Cache/js/52d804e7c92e8b2c_0
+ create mode 100644 userdata/Default/Code Cache/js/53f4a3e373c24962_0
+ create mode 100644 userdata/Default/Code Cache/js/56f6cf94d284aa6c_0
+ create mode 100644 userdata/Default/Code Cache/js/5ebd3ebfb76bc433_0
+ create mode 100644 userdata/Default/Code Cache/js/5f88e50c345e4508_0
+ create mode 100644 userdata/Default/Code Cache/js/63912decf65eadf7_0
+ create mode 100644 userdata/Default/Code Cache/js/652ab6899822eb68_0
+ create mode 100644 userdata/Default/Code Cache/js/65d598d8975fd0ef_0
+ create mode 100644 userdata/Default/Code Cache/js/66b4c5c3b9c0c235_0
+ create mode 100644 userdata/Default/Code Cache/js/66f30c730dc86373_0
+ create mode 100644 userdata/Default/Code Cache/js/6797d78e8b2000ba_0
+ create mode 100644 userdata/Default/Code Cache/js/6895283acee84430_0
+ create mode 100644 userdata/Default/Code Cache/js/68db669666408ffe_0
+ create mode 100644 userdata/Default/Code Cache/js/6b421372d7c25b96_0
+ create mode 100644 userdata/Default/Code Cache/js/6bca888ee5068ada_0
+ create mode 100644 userdata/Default/Code Cache/js/6c96757d8a6c57e9_0
+ create mode 100644 userdata/Default/Code Cache/js/7143d16aa1661ec4_0
+ create mode 100644 userdata/Default/Code Cache/js/71dd2b32f7ab96c5_0
+ create mode 100644 userdata/Default/Code Cache/js/73d4ba249d1e28e5_0
+ create mode 100644 userdata/Default/Code Cache/js/763491f61062da6c_0
+ create mode 100644 userdata/Default/Code Cache/js/76a65cc4c85b5947_0
+ create mode 100644 userdata/Default/Code Cache/js/7816bb5dd8aa4199_0
+ create mode 100644 userdata/Default/Code Cache/js/78be20e232864cc7_0
+ create mode 100644 userdata/Default/Code Cache/js/7953c577c2ab5364_0
+ create mode 100644 userdata/Default/Code Cache/js/797d8b4ba11106a4_0
+ create mode 100644 userdata/Default/Code Cache/js/8346fcf6adbe3c5b_0
+ create mode 100644 userdata/Default/Code Cache/js/837abc4dfa89eece_0
+ create mode 100644 userdata/Default/Code Cache/js/86985955e21a7960_0
+ create mode 100644 userdata/Default/Code Cache/js/87665011334ee991_0
+ create mode 100644 userdata/Default/Code Cache/js/8e9302b245d54518_0
+ create mode 100644 userdata/Default/Code Cache/js/924cefb725501879_0
+ create mode 100644 userdata/Default/Code Cache/js/9789e726d9a9b89d_0
+ create mode 100644 userdata/Default/Code Cache/js/9aa3bd15d766f44d_0
+ create mode 100644 userdata/Default/Code Cache/js/9d586baa38f672e9_0
+ create mode 100644 userdata/Default/Code Cache/js/9ebad1394c8523a1_0
+ create mode 100644 userdata/Default/Code Cache/js/a13d5103cbaa8506_0
+ create mode 100644 userdata/Default/Code Cache/js/a6b80242a9bcd33f_0
+ create mode 100644 userdata/Default/Code Cache/js/a7f43eb6c1bce81e_0
+ create mode 100644 userdata/Default/Code Cache/js/acdb3e4713632dc8_0
+ create mode 100644 userdata/Default/Code Cache/js/b1d3692900fbd653_0
+ create mode 100644 userdata/Default/Code Cache/js/b35de8ac69d85c07_0
+ create mode 100644 userdata/Default/Code Cache/js/bc53d2d383ade9be_0
+ create mode 100644 userdata/Default/Code Cache/js/bcdda83e7f76127e_0
+ create mode 100644 userdata/Default/Code Cache/js/c8d220579b8e2291_0
+ create mode 100644 userdata/Default/Code Cache/js/caba0653abadcc20_0
+ create mode 100644 userdata/Default/Code Cache/js/cc077ff31f7a9e9c_0
+ create mode 100644 userdata/Default/Code Cache/js/ce4ba160d3fafa63_0
+ create mode 100644 userdata/Default/Code Cache/js/d0bb87c49fb397c1_0
+ create mode 100644 userdata/Default/Code Cache/js/d4ebaef9849ffbbe_0
+ create mode 100644 userdata/Default/Code Cache/js/d5a3f4e4004e3fb9_0
+ create mode 100644 userdata/Default/Code Cache/js/d86f1a21d7e2c364_0
+ create mode 100644 userdata/Default/Code Cache/js/d9cf012ac622b8eb_0
+ create mode 100644 userdata/Default/Code Cache/js/da6ea24d6bd2e593_0
+ create mode 100644 userdata/Default/Code Cache/js/dd5b266a22dc6019_0
+ create mode 100644 userdata/Default/Code Cache/js/e360c8b8c6bd5b8e_0
+ create mode 100644 userdata/Default/Code Cache/js/e50108657953d457_0
+ create mode 100644 userdata/Default/Code Cache/js/e5bd60bb149c5d6a_0
+ create mode 100644 userdata/Default/Code Cache/js/e9dbcfd1e4c615e6_0
+ create mode 100644 userdata/Default/Code Cache/js/ebebcff4e718a2e2_0
+ create mode 100644 userdata/Default/Code Cache/js/ec0d3539227081cf_0
+ create mode 100644 userdata/Default/Code Cache/js/ed8b1521fda12069_0
+ create mode 100644 userdata/Default/Code Cache/js/ef5358a931be414a_0
+ create mode 100644 userdata/Default/Code Cache/js/f179f0e8c182ed23_0
+ create mode 100644 userdata/Default/Code Cache/js/f2e1e89e3b6a466e_0
+ create mode 100644 userdata/Default/Code Cache/js/f72b2484e461517d_0
+ create mode 100644 userdata/Default/Code Cache/js/fa836b63592495e8_0
+ create mode 100644 userdata/Default/Code Cache/js/fda6959d106d7392_0
+To https://github.com/LitteringLemons/tradercharts-dashboard.git
+   d8d1d85..1bee365  main -> main
