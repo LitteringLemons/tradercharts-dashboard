@@ -1,2 +1,3 @@
-2026/05/13-22:47:44.989 312a Creating DB /home/kidintheflannel/tradingcharts/userdata/Default/Sync Data/LevelDB since it was missing.
-2026/05/13-22:47:45.069 312a Reusing MANIFEST /home/kidintheflannel/tradingcharts/userdata/Default/Sync Data/LevelDB/MANIFEST-000001
+2026/05/18-00:01:47.253 44b1 Reusing MANIFEST /home/kidintheflannel/tradingcharts/userdata/Default/Sync Data/LevelDB/MANIFEST-000001
+2026/05/18-00:01:47.269 44b1 Recovering log #3
+2026/05/18-00:01:47.270 44b1 Reusing old log /home/kidintheflannel/tradingcharts/userdata/Default/Sync Data/LevelDB/000003.log 

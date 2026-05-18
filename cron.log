@@ -1903,3 +1903,49 @@ Saved xauusd_5m.png
 Loading xauusd_15m...
 Saved xauusd_15m.png
 All screenshots complete.
+Loading eurusd_5m...
+Saved eurusd_5m.png
+Could not extract price for EURUSD
+Saved eurusd_5m.json
+Loading eurusd_15m...
+Saved eurusd_15m.png
+Could not extract price for EURUSD
+Saved eurusd_15m.json
+Loading gbpusd_5m...
+Saved gbpusd_5m.png
+Could not extract price for GBPUSD
+Saved gbpusd_5m.json
+Loading gbpusd_15m...
+Saved gbpusd_15m.png
+Could not extract price for GBPUSD
+Saved gbpusd_15m.json
+Loading usdjpy_5m...
+Saved usdjpy_5m.png
+Could not extract price for USDJPY
+Saved usdjpy_5m.json
+Loading usdjpy_15m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+
+    at /home/kidintheflannel/tradingcharts/capture.js:91:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+Saved eurusd_5m.png
+Saved eurusd_5m.json
+Loading eurusd_15m...
+Saved eurusd_15m.png
+Saved eurusd_15m.json
+Loading gbpusd_5m...
+Saved gbpusd_5m.png
+Saved gbpusd_5m.json
+Loading gbpusd_15m...
