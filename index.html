@@ -3,9 +3,13 @@
 
 <head>
   <meta charset="UTF-8">
+
+  <!-- Auto refresh page every 60 seconds -->
+  <meta http-equiv="refresh" content="60">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Trading Charts Dashboard</title>
+  <title>TraderCharts Dashboard</title>
 
   <style>
 
@@ -63,7 +67,7 @@
 
 <body>
 
-  <h1>Trading Charts Dashboard</h1>
+  <h1>TraderCharts Dashboard</h1>
 
   <div class="grid">
 
@@ -71,125 +75,88 @@
     <div class="chart-card">
       <div class="chart-header">
         <div class="chart-title">EURUSD 5 Minute</div>
-        <div class="timestamp" id="eurusd5m-time"></div>
+        <div class="timestamp">Auto-updated every 15 minutes</div>
       </div>
-      <img class="chart-image" id="eurusd5m" src="">
+      <img class="chart-image" src="eurusd_5m.png">
     </div>
 
     <div class="chart-card">
       <div class="chart-header">
         <div class="chart-title">EURUSD 15 Minute</div>
-        <div class="timestamp" id="eurusd15m-time"></div>
+        <div class="timestamp">Auto-updated every 15 minutes</div>
       </div>
-      <img class="chart-image" id="eurusd15m" src="">
+      <img class="chart-image" src="eurusd_15m.png">
     </div>
 
     <!-- GBPUSD -->
     <div class="chart-card">
       <div class="chart-header">
         <div class="chart-title">GBPUSD 5 Minute</div>
-        <div class="timestamp" id="gbpusd5m-time"></div>
+        <div class="timestamp">Auto-updated every 15 minutes</div>
       </div>
-      <img class="chart-image" id="gbpusd5m" src="">
+      <img class="chart-image" src="gbpusd_5m.png">
     </div>
 
     <div class="chart-card">
       <div class="chart-header">
         <div class="chart-title">GBPUSD 15 Minute</div>
-        <div class="timestamp" id="gbpusd15m-time"></div>
+        <div class="timestamp">Auto-updated every 15 minutes</div>
       </div>
-      <img class="chart-image" id="gbpusd15m" src="">
+      <img class="chart-image" src="gbpusd_15m.png">
     </div>
 
     <!-- USDJPY -->
     <div class="chart-card">
       <div class="chart-header">
         <div class="chart-title">USDJPY 5 Minute</div>
-        <div class="timestamp" id="usdjpy5m-time"></div>
+        <div class="timestamp">Auto-updated every 15 minutes</div>
       </div>
-      <img class="chart-image" id="usdjpy5m" src="">
+      <img class="chart-image" src="usdjpy_5m.png">
     </div>
 
     <div class="chart-card">
       <div class="chart-header">
         <div class="chart-title">USDJPY 15 Minute</div>
-        <div class="timestamp" id="usdjpy15m-time"></div>
+        <div class="timestamp">Auto-updated every 15 minutes</div>
       </div>
-      <img class="chart-image" id="usdjpy15m" src="">
+      <img class="chart-image" src="usdjpy_15m.png">
     </div>
 
     <!-- BTCUSD -->
     <div class="chart-card">
       <div class="chart-header">
         <div class="chart-title">BTCUSD 5 Minute</div>
-        <div class="timestamp" id="btcusd5m-time"></div>
+        <div class="timestamp">Auto-updated every 15 minutes</div>
       </div>
-      <img class="chart-image" id="btcusd5m" src="">
+      <img class="chart-image" src="btcusd_5m.png">
     </div>
 
     <div class="chart-card">
       <div class="chart-header">
         <div class="chart-title">BTCUSD 15 Minute</div>
-        <div class="timestamp" id="btcusd15m-time"></div>
+        <div class="timestamp">Auto-updated every 15 minutes</div>
       </div>
-      <img class="chart-image" id="btcusd15m" src="">
+      <img class="chart-image" src="btcusd_15m.png">
     </div>
 
     <!-- XAUUSD -->
     <div class="chart-card">
       <div class="chart-header">
         <div class="chart-title">XAUUSD 5 Minute</div>
-        <div class="timestamp" id="xauusd5m-time"></div>
+        <div class="timestamp">Auto-updated every 15 minutes</div>
       </div>
-      <img class="chart-image" id="xauusd5m" src="">
+      <img class="chart-image" src="xauusd_5m.png">
     </div>
 
     <div class="chart-card">
       <div class="chart-header">
         <div class="chart-title">XAUUSD 15 Minute</div>
-        <div class="timestamp" id="xauusd15m-time"></div>
+        <div class="timestamp">Auto-updated every 15 minutes</div>
       </div>
-      <img class="chart-image" id="xauusd15m" src="">
+      <img class="chart-image" src="xauusd_15m.png">
     </div>
 
   </div>
-
-  <script>
-
-    function refreshImages() {
-
-      const timestamp = new Date().getTime();
-      const readableTime = new Date().toLocaleTimeString();
-
-      const charts = [
-        'eurusd5m',
-        'eurusd15m',
-        'gbpusd5m',
-        'gbpusd15m',
-        'usdjpy5m',
-        'usdjpy15m',
-        'btcusd5m',
-        'btcusd15m',
-        'xauusd5m',
-        'xauusd15m'
-      ];
-
-      charts.forEach(chart => {
-
-        const imageElement = document.getElementById(chart);
-
-        imageElement.src = `${chart.replace(/([0-9])/,'_$1').replace('btcusd','btcusd').replace('xauusd','xauusd')}.png?t=${timestamp}`;
-
-        document.getElementById(`${chart}-time`).innerText =
-          `Updated ${readableTime}`;
-      });
-    }
-
-    refreshImages();
-
-    setInterval(refreshImages, 60000);
-
-  </script>
 
 </body>
 
