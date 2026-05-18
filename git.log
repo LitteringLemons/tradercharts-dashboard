@@ -166,3 +166,38 @@ After doing this, you may fix the identity used for this commit with:
  create mode 100644 userdata/Default/IndexedDB/https_www.tradingview.com_0.indexeddb.leveldb/000008.ldb
 To https://github.com/LitteringLemons/tradercharts-dashboard.git
    7e84a90..ec9904d  main -> main
+[main a1c6a51] Auto-update charts
+ Committer: kidintheflannel <kidintheflannel@penguin>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 118 files changed, 83 insertions(+), 33 deletions(-)
+ create mode 100644 userdata/Default/Cache/Cache_Data/0aa4808c843a0d06_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/312ec82a9968e29b_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/375e563d78ca629f_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/5344438bf9a17cb0_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/544b0c11fb2c2c6f_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/5c3a9ce05aafaaf1_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/5d848a5ac5f365b1_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/6b06c2621e5706bf_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/7b14318efb2243da_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/859d486050ee12da_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/a4b23569553012df_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/b7c8fd8cfd2327a9_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/bb46d8702d695b61_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/c23a487f18173d45_0
+ create mode 100644 userdata/Default/Code Cache/js/11471c9817c8e743_0
+ create mode 100644 userdata/Default/Code Cache/js/ac08a579a0184f04_0
+ delete mode 100644 userdata/Default/IndexedDB/https_www.tradingview.com_0.indexeddb.leveldb/000005.ldb
+ delete mode 100644 userdata/Default/IndexedDB/https_www.tradingview.com_0.indexeddb.leveldb/000008.ldb
+ create mode 100644 userdata/Default/IndexedDB/https_www.tradingview.com_0.indexeddb.leveldb/000010.ldb
+To https://github.com/LitteringLemons/tradercharts-dashboard.git
+   ec9904d..a1c6a51  main -> main
