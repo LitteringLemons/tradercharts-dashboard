@@ -5185,3 +5185,138 @@ After doing this, you may fix the identity used for this commit with:
  create mode 100644 userdata/Default/Code Cache/js/a28d3cd5c8c1ad27_0
 To https://github.com/LitteringLemons/tradercharts-dashboard.git
    9f166d01..6daa359e  main -> main
+[main 80692217] Auto-update charts
+ Committer: kidintheflannel <kidintheflannel@penguin>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 235 files changed, 158 insertions(+), 93 deletions(-)
+ create mode 100644 userdata/Default/Cache/Cache_Data/4e5ba31f63b2d541_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/6b3dbc4b486254af_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/79a988c188d72f3f_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/7cf44feef03e2e94_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/853dd00db72404d2_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/a1f3ee7a7523b6f4_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/bf37e4da0e223ed7_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/c515347e1fbb9216_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/f1227ac8074f432b_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/f543f66dff8ac5b8_0
+ delete mode 100644 userdata/Default/Code Cache/js/00c63ed76326635a_0
+ delete mode 100644 userdata/Default/Code Cache/js/0c1cb61587e5de12_0
+ delete mode 100644 userdata/Default/Code Cache/js/1d0eba51536eaebe_0
+ create mode 100644 userdata/Default/Code Cache/js/2048df03a5878359_0
+ delete mode 100644 userdata/Default/Code Cache/js/23bfb5b4dbaa082f_0
+ create mode 100644 userdata/Default/Code Cache/js/3f30b79b316ce975_0
+ delete mode 100644 userdata/Default/Code Cache/js/53e7f141ff9377aa_0
+ delete mode 100644 userdata/Default/Code Cache/js/5d24686e7b23db66_0
+ delete mode 100644 userdata/Default/Code Cache/js/60d66a80fe9822a1_0
+ delete mode 100644 userdata/Default/Code Cache/js/9c499d69a3a0346b_0
+ delete mode 100644 userdata/Default/Code Cache/js/a6859ae2c34c6574_0
+ delete mode 100644 userdata/Default/Code Cache/js/a85ce1378c72c8d2_0
+ delete mode 100644 userdata/Default/Code Cache/js/ab8271863f41e468_0
+ delete mode 100644 userdata/Default/Code Cache/js/c03a7f024342df3a_0
+ delete mode 100644 userdata/Default/Code Cache/js/dcdae0cf41d5327b_0
+ delete mode 100644 userdata/Default/Code Cache/js/dce17f892fc393ca_0
+ delete mode 100644 userdata/Default/Code Cache/js/dd4dcf204c6b5fbf_0
+ delete mode 100644 userdata/Default/Code Cache/js/dda79f6b6f32bd0a_0
+ delete mode 100644 userdata/Default/Code Cache/js/ddab517d922cf9fd_0
+ delete mode 100644 userdata/Default/Code Cache/js/df6dde4b38368be4_0
+ delete mode 100644 userdata/Default/Code Cache/js/e05cfbf67b945001_0
+ delete mode 100644 userdata/Default/Code Cache/js/e1737b5b6146b919_0
+ delete mode 100644 userdata/Default/Code Cache/js/e182fae1d5ab7760_0
+ delete mode 100644 userdata/Default/Code Cache/js/e1b5ff52cd89868a_0
+ delete mode 100644 userdata/Default/Code Cache/js/e27985af571892b1_0
+ delete mode 100644 userdata/Default/Code Cache/js/e27f2ece7c814a1c_0
+ delete mode 100644 userdata/Default/Code Cache/js/e3a310ddfe46c145_0
+ delete mode 100644 userdata/Default/Code Cache/js/e3f2aeebb7fb98ae_0
+ delete mode 100644 userdata/Default/Code Cache/js/e3fb9cdc186435c4_0
+ delete mode 100644 userdata/Default/Code Cache/js/e4c7ec7d9dd4849c_0
+ delete mode 100644 userdata/Default/Code Cache/js/e543431ab7427c1e_0
+ delete mode 100644 userdata/Default/Code Cache/js/e5703909b871e77c_0
+ delete mode 100644 userdata/Default/Code Cache/js/e5982cf452f69817_0
+ delete mode 100644 userdata/Default/Code Cache/js/e5a509ee86561677_0
+ delete mode 100644 userdata/Default/Code Cache/js/e67f45f707cf4364_0
+ delete mode 100644 userdata/Default/Code Cache/js/e6e1c1e47c1531c3_0
+ delete mode 100644 userdata/Default/Code Cache/js/e75c1e0cf46403f3_0
+ delete mode 100644 userdata/Default/Code Cache/js/e801215594c20bee_0
+ delete mode 100644 userdata/Default/Code Cache/js/e83b9547bc81aaf8_0
+ delete mode 100644 userdata/Default/Code Cache/js/e8551beaba6d53da_0
+ delete mode 100644 userdata/Default/Code Cache/js/e8a36786601b6d1d_0
+ delete mode 100644 userdata/Default/Code Cache/js/eb1dfd57bce6fed8_0
+ delete mode 100644 userdata/Default/Code Cache/js/eba048212f6f6c4f_0
+ delete mode 100644 userdata/Default/Code Cache/js/ebbc19af3104cb3d_0
+ delete mode 100644 userdata/Default/Code Cache/js/ebff70f0c07b6f8a_0
+ delete mode 100644 userdata/Default/Code Cache/js/eccc074420bec13a_0
+ delete mode 100644 userdata/Default/Code Cache/js/ed49f11e7c5d7d24_0
+ delete mode 100644 userdata/Default/Code Cache/js/ee2a3e84581f5c03_0
+ delete mode 100644 userdata/Default/Code Cache/js/ee2aea62f256504a_0
+ delete mode 100644 userdata/Default/Code Cache/js/ee567ad7c65b0562_0
+ delete mode 100644 userdata/Default/Code Cache/js/ef8e72e2046aedc6_0
+ delete mode 100644 userdata/Default/Code Cache/js/efb05c112f6688a6_0
+ delete mode 100644 userdata/Default/Code Cache/js/efc29ac75c3d6e5f_0
+ delete mode 100644 userdata/Default/Code Cache/js/efe7e11ee4677ce5_0
+ delete mode 100644 userdata/Default/Code Cache/js/f0a6cd0802da0fb5_0
+ delete mode 100644 userdata/Default/Code Cache/js/f118dc4af9c2fada_0
+ delete mode 100644 userdata/Default/Code Cache/js/f1f92cc69669a3f4_0
+ delete mode 100644 userdata/Default/Code Cache/js/f22ea1fb5d2a2f9c_0
+ delete mode 100644 userdata/Default/Code Cache/js/f27b18e790d51931_0
+ delete mode 100644 userdata/Default/Code Cache/js/f2fc75ca4f367ebd_0
+ delete mode 100644 userdata/Default/Code Cache/js/f30d67218920a381_0
+ delete mode 100644 userdata/Default/Code Cache/js/f33489e3c9cafa6e_0
+ delete mode 100644 userdata/Default/Code Cache/js/f34174ebe4af8f69_0
+ delete mode 100644 userdata/Default/Code Cache/js/f3a3131e52593b9d_0
+ delete mode 100644 userdata/Default/Code Cache/js/f41ea26e782ab9c3_0
+ delete mode 100644 userdata/Default/Code Cache/js/f437e0f403205c9c_0
+ delete mode 100644 userdata/Default/Code Cache/js/f457382e04a7f22c_0
+ delete mode 100644 userdata/Default/Code Cache/js/f470cf2e77624b96_0
+ delete mode 100644 userdata/Default/Code Cache/js/f4733958f63453d4_0
+ delete mode 100644 userdata/Default/Code Cache/js/f4a9a51b30e49541_0
+ delete mode 100644 userdata/Default/Code Cache/js/f4b0c06f63e67585_0
+ delete mode 100644 userdata/Default/Code Cache/js/f4e918b66d322e4c_0
+ delete mode 100644 userdata/Default/Code Cache/js/f53729a24a34444e_0
+ delete mode 100644 userdata/Default/Code Cache/js/f5885666b9de67cf_0
+ delete mode 100644 userdata/Default/Code Cache/js/f64b51c4c4c34486_0
+ delete mode 100644 userdata/Default/Code Cache/js/f6624754eabea67c_0
+ delete mode 100644 userdata/Default/Code Cache/js/f6635e1d58ec2525_0
+ delete mode 100644 userdata/Default/Code Cache/js/f6c154b398221282_0
+ delete mode 100644 userdata/Default/Code Cache/js/f71e1e65977610f3_0
+ delete mode 100644 userdata/Default/Code Cache/js/f7740a3566015e02_0
+ delete mode 100644 userdata/Default/Code Cache/js/f774d775518cf999_0
+ delete mode 100644 userdata/Default/Code Cache/js/f7c3b24e705ac4fa_0
+ delete mode 100644 userdata/Default/Code Cache/js/f7e0ae0de7f9b513_0
+ delete mode 100644 userdata/Default/Code Cache/js/f807a23187c275fa_0
+ delete mode 100644 userdata/Default/Code Cache/js/f82b9c80ecae3ed4_0
+ delete mode 100644 userdata/Default/Code Cache/js/f8995042888491d1_0
+ delete mode 100644 userdata/Default/Code Cache/js/f94e8bd1a0f53243_0
+ delete mode 100644 userdata/Default/Code Cache/js/f96433776cee5be3_0
+ delete mode 100644 userdata/Default/Code Cache/js/fa85696e60fbf5bf_0
+ delete mode 100644 userdata/Default/Code Cache/js/fb3824bb962188b4_0
+ delete mode 100644 userdata/Default/Code Cache/js/fb87d21cddeb261a_0
+ delete mode 100644 userdata/Default/Code Cache/js/fb881533932d36b6_0
+ delete mode 100644 userdata/Default/Code Cache/js/fbb9204592ac80ce_0
+ delete mode 100644 userdata/Default/Code Cache/js/fbf602f0dcb19074_0
+ delete mode 100644 userdata/Default/Code Cache/js/fc02edd68b087d56_0
+ delete mode 100644 userdata/Default/Code Cache/js/fc30c638268b28cd_0
+ delete mode 100644 userdata/Default/Code Cache/js/fc7f70e823b4a0de_0
+ delete mode 100644 userdata/Default/Code Cache/js/fca7048914f26198_0
+ delete mode 100644 userdata/Default/Code Cache/js/fcba55f92b78a552_0
+ delete mode 100644 userdata/Default/Code Cache/js/fcd12e4750028a5c_0
+ delete mode 100644 userdata/Default/Code Cache/js/fce84e13ab92ecab_0
+ delete mode 100644 userdata/Default/Code Cache/js/fd1d0d34e755cec6_0
+ delete mode 100644 userdata/Default/Code Cache/js/fd6e2d559bbec995_0
+ delete mode 100644 userdata/Default/Code Cache/js/fd9116734428d99a_0
+ delete mode 100644 userdata/Default/Code Cache/js/fe564f1931942a3e_0
+ delete mode 100644 userdata/Default/Code Cache/js/fec63f7a9bb8d139_0
+ delete mode 100644 userdata/Default/Code Cache/js/fecca8008a0afc2e_0
+ delete mode 100644 userdata/Default/Code Cache/js/ff2759217781610c_0
+ delete mode 100644 userdata/Default/Code Cache/js/ffa1a06ab15ddcf2_0
+To https://github.com/LitteringLemons/tradercharts-dashboard.git
+   6daa359e..80692217  main -> main
