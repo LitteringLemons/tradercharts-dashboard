@@ -76,6 +76,11 @@ const fs = require('fs');
     }
   ];
 
+  const latestData = {
+    generated_at: new Date().toISOString(),
+    charts: {}
+  };
+
   for (const chart of charts) {
 
     console.log(`Loading ${chart.name}...`);
@@ -84,10 +89,9 @@ const fs = require('fs');
       waitUntil: 'domcontentloaded'
     });
 
-    // Allow chart + indicators to fully render
     await page.waitForTimeout(10000);
 
-    // Save chart screenshot
+    // Save screenshot
     await page.screenshot({
       path: `${chart.name}.png`,
       clip: {
@@ -100,34 +104,31 @@ const fs = require('fs');
 
     console.log(`Saved ${chart.name}.png`);
 
-// Extract current price from body text
+    // Extract current price from TradingView text
 
-const bodyText = await page.locator('body').innerText();
+    const bodyText = await page.locator('body').innerText();
 
-let currentPrice = null;
+    let currentPrice = null;
 
-try {
+    try {
 
-  // Find line after "C"
+      const closeMatch = bodyText.match(
+        /C\s+([0-9,.]+)/
+      );
 
-  const lines = bodyText.split('\n');
+      if (closeMatch && closeMatch[1]) {
 
-  const cIndex = lines.indexOf('C');
+        currentPrice = parseFloat(
+          closeMatch[1].replace(/,/g, '')
+        );
+      }
 
-  if (cIndex !== -1 && lines[cIndex + 1]) {
+    } catch (err) {
 
-    currentPrice = parseFloat(
-      lines[cIndex + 1].replace(/,/g, '')
-    );
-  }
+      console.log(`Could not extract price for ${chart.symbol}`);
+    }
 
-} catch (err) {
-
-  console.log(`Could not extract price for ${chart.symbol}`);
-}
-
-
-    // Generate JSON metadata
+    // Individual JSON
 
     const metadata = {
       symbol: chart.symbol,
@@ -143,7 +144,27 @@ try {
     );
 
     console.log(`Saved ${chart.name}.json`);
+
+    // Add to master latest.json
+
+    latestData.charts[chart.name] = {
+      symbol: chart.symbol,
+      timeframe: chart.timeframe,
+      current_price: currentPrice,
+      image: `https://www.tradercharts.xyz/${chart.name}.png`,
+      metadata: `https://www.tradercharts.xyz/${chart.name}.json`,
+      updated_at: metadata.updated_at
+    };
   }
+
+  // Save master endpoint
+
+  fs.writeFileSync(
+    'latest.json',
+    JSON.stringify(latestData, null, 2)
+  );
+
+  console.log('Saved latest.json');
 
   await context.close();
 
