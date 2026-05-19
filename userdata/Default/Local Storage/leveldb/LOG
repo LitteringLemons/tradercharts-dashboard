@@ -1,3 +1,5 @@
-2026/05/19-09:30:04.952 2cb2 Reusing MANIFEST /home/kidintheflannel/tradingcharts/userdata/Default/Local Storage/leveldb/MANIFEST-000001
-2026/05/19-09:30:05.025 2cb2 Recovering log #16
-2026/05/19-09:30:05.031 2cb2 Reusing old log /home/kidintheflannel/tradingcharts/userdata/Default/Local Storage/leveldb/000016.log 
+2026/05/19-09:45:05.026 2d71 Reusing MANIFEST /home/kidintheflannel/tradingcharts/userdata/Default/Local Storage/leveldb/MANIFEST-000001
+2026/05/19-09:45:05.062 2d71 Recovering log #16
+2026/05/19-09:45:05.066 2d71 Level-0 table #19: started
+2026/05/19-09:45:05.140 2d71 Level-0 table #19: 7214 bytes OK
+2026/05/19-09:45:05.245 2d71 Delete type=0 #16
