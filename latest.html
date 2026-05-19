@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TraderCharts Latest</title>
+</head>
+<body>
+
+<h1>TraderCharts Latest Metadata</h1>
+
+<pre id="json"></pre>
+
+<script>
+fetch('latest.json')
+  .then(r => r.json())
+  .then(data => {
+    document.getElementById('json').textContent =
+      JSON.stringify(data, null, 2);
+  });
+</script>
+
+</body>
+</html>
