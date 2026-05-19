@@ -1,3 +1,9 @@
-2026/05/19-15:15:35.238 3d91 Reusing MANIFEST /home/kidintheflannel/tradingcharts/userdata/Default/IndexedDB/https_www.tradingview.com_0.indexeddb.leveldb/MANIFEST-000001
-2026/05/19-15:15:35.239 3d91 Recovering log #21
-2026/05/19-15:15:35.600 3d91 Reusing old log /home/kidintheflannel/tradingcharts/userdata/Default/IndexedDB/https_www.tradingview.com_0.indexeddb.leveldb/000021.log 
+2026/05/19-15:30:47.066 3e4f Reusing MANIFEST /home/kidintheflannel/tradingcharts/userdata/Default/IndexedDB/https_www.tradingview.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/05/19-15:30:47.077 3e4f Recovering log #25
+2026/05/19-15:30:47.077 3e4f Reusing old log /home/kidintheflannel/tradingcharts/userdata/Default/IndexedDB/https_www.tradingview.com_0.indexeddb.leveldb/000025.log 
+2026/05/19-15:31:04.026 3e54 Compacting 1@1 + 1@2 files
+2026/05/19-15:31:04.200 3e54 Generated table #28@1: 62841 keys, 1514400 bytes
+2026/05/19-15:31:04.200 3e54 Compacted 1@1 + 1@2 files => 1514400 bytes
+2026/05/19-15:31:04.210 3e54 compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/05/19-15:31:04.211 3e54 Delete type=2 #23
+2026/05/19-15:31:04.211 3e54 Delete type=2 #26
