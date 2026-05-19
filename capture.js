@@ -91,7 +91,8 @@ const fs = require('fs');
 
     await page.waitForTimeout(10000);
 
-    // Save screenshot
+    // Screenshot
+
     await page.screenshot({
       path: `${chart.name}.png`,
       clip: {
@@ -104,7 +105,7 @@ const fs = require('fs');
 
     console.log(`Saved ${chart.name}.png`);
 
-    // Extract current price from TradingView text
+    // Extract current price
 
     const bodyText = await page.locator('body').innerText();
 
@@ -128,7 +129,7 @@ const fs = require('fs');
       console.log(`Could not extract price for ${chart.symbol}`);
     }
 
-    // Individual JSON
+    // Per-chart JSON
 
     const metadata = {
       symbol: chart.symbol,
@@ -145,7 +146,7 @@ const fs = require('fs');
 
     console.log(`Saved ${chart.name}.json`);
 
-    // Add to master latest.json
+    // Add to latest.json
 
     latestData.charts[chart.name] = {
       symbol: chart.symbol,
@@ -157,7 +158,7 @@ const fs = require('fs');
     };
   }
 
-  // Save master endpoint
+  // Save latest.json
 
   fs.writeFileSync(
     'latest.json',
@@ -165,6 +166,67 @@ const fs = require('fs');
   );
 
   console.log('Saved latest.json');
+
+  // Build STATIC latest.html
+
+  let html = `
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>TraderCharts Latest</title>
+
+<style>
+
+body {
+  background:#0d1117;
+  color:white;
+  font-family:Arial;
+  padding:20px;
+}
+
+h1 {
+  margin-bottom:20px;
+}
+
+pre {
+  background:#161b22;
+  padding:15px;
+  border-radius:8px;
+  overflow:auto;
+  white-space:pre-wrap;
+}
+
+a {
+  color:#58a6ff;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>TraderCharts Latest Metadata</h1>
+
+<p>
+Generated:
+${latestData.generated_at}
+</p>
+
+<pre>
+${JSON.stringify(latestData, null, 2)}
+</pre>
+
+</body>
+</html>
+`;
+
+  fs.writeFileSync(
+    'latest.html',
+    html
+  );
+
+  console.log('Saved latest.html');
 
   await context.close();
 
