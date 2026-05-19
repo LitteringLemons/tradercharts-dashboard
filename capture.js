@@ -105,7 +105,7 @@ const fs = require('fs');
 
     console.log(`Saved ${chart.name}.png`);
 
-    // Extract current price
+    // Extract price
 
     const bodyText = await page.locator('body').innerText();
 
@@ -146,19 +146,16 @@ const fs = require('fs');
 
     console.log(`Saved ${chart.name}.json`);
 
-    // Add to latest.json
-
     latestData.charts[chart.name] = {
       symbol: chart.symbol,
       timeframe: chart.timeframe,
       current_price: currentPrice,
       image: `https://www.tradercharts.xyz/${chart.name}.png`,
-      metadata: `https://www.tradercharts.xyz/${chart.name}.json`,
       updated_at: metadata.updated_at
     };
   }
 
-  // Save latest.json
+  // latest.json
 
   fs.writeFileSync(
     'latest.json',
@@ -167,14 +164,14 @@ const fs = require('fs');
 
   console.log('Saved latest.json');
 
-  // Build STATIC latest.html
+  // INDEX.HTML = AI HOMEPAGE
 
-  let html = `
+  let homepage = `
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>TraderCharts Latest</title>
+<title>TraderCharts AI Feed</title>
 
 <style>
 
@@ -185,15 +182,10 @@ body {
   padding:20px;
 }
 
-h1 {
-  margin-bottom:20px;
-}
-
 pre {
   background:#161b22;
   padding:15px;
   border-radius:8px;
-  overflow:auto;
   white-space:pre-wrap;
 }
 
@@ -206,11 +198,15 @@ a {
 
 <body>
 
-<h1>TraderCharts Latest Metadata</h1>
+<h1>TraderCharts AI Feed</h1>
 
 <p>
 Generated:
 ${latestData.generated_at}
+</p>
+
+<p>
+<a href="/charts.html">Open Chart Dashboard</a>
 </p>
 
 <pre>
@@ -222,11 +218,11 @@ ${JSON.stringify(latestData, null, 2)}
 `;
 
   fs.writeFileSync(
-    'latest.html',
-    html
+    'index.html',
+    homepage
   );
 
-  console.log('Saved latest.html');
+  console.log('Saved index.html');
 
   await context.close();
 

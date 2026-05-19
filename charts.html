@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Auto refresh page every 60 seconds -->
+  <meta http-equiv="refresh" content="60">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>TraderCharts Dashboard</title>
+
+  <style>
+
+    body {
+      background-color: #0d1117;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+      gap: 25px;
+    }
+
+    .chart-card {
+      background-color: #161b22;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    }
+
+    .chart-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .chart-title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .timestamp {
+      font-size: 14px;
+      color: #8b949e;
+    }
+
+    .chart-image {
+      width: 100%;
+      border-radius: 8px;
+      border: 1px solid #30363d;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <h1>TraderCharts Dashboard</h1>
+
+  <div class="grid">
+
+    <!-- EURUSD -->
+    <div class="chart-card">
+      <div class="chart-header">
+        <div class="chart-title">EURUSD 5 Minute</div>
+        <div class="timestamp">Auto-updated every 15 minutes</div>
+      </div>
+      <img class="chart-image" src="eurusd_5m.png">
+    </div>
+
+    <div class="chart-card">
+      <div class="chart-header">
+        <div class="chart-title">EURUSD 15 Minute</div>
+        <div class="timestamp">Auto-updated every 15 minutes</div>
+      </div>
+      <img class="chart-image" src="eurusd_15m.png">
+    </div>
+
+    <!-- GBPUSD -->
+    <div class="chart-card">
+      <div class="chart-header">
+        <div class="chart-title">GBPUSD 5 Minute</div>
+        <div class="timestamp">Auto-updated every 15 minutes</div>
+      </div>
+      <img class="chart-image" src="gbpusd_5m.png">
+    </div>
+
+    <div class="chart-card">
+      <div class="chart-header">
+        <div class="chart-title">GBPUSD 15 Minute</div>
+        <div class="timestamp">Auto-updated every 15 minutes</div>
+      </div>
+      <img class="chart-image" src="gbpusd_15m.png">
+    </div>
+
+    <!-- USDJPY -->
+    <div class="chart-card">
+      <div class="chart-header">
+        <div class="chart-title">USDJPY 5 Minute</div>
+        <div class="timestamp">Auto-updated every 15 minutes</div>
+      </div>
+      <img class="chart-image" src="usdjpy_5m.png">
+    </div>
+
+    <div class="chart-card">
+      <div class="chart-header">
+        <div class="chart-title">USDJPY 15 Minute</div>
+        <div class="timestamp">Auto-updated every 15 minutes</div>
+      </div>
+      <img class="chart-image" src="usdjpy_15m.png">
+    </div>
+
+    <!-- BTCUSD -->
+    <div class="chart-card">
+      <div class="chart-header">
+        <div class="chart-title">BTCUSD 5 Minute</div>
+        <div class="timestamp">Auto-updated every 15 minutes</div>
+      </div>
+      <img class="chart-image" src="btcusd_5m.png">
+    </div>
+
+    <div class="chart-card">
+      <div class="chart-header">
+        <div class="chart-title">BTCUSD 15 Minute</div>
+        <div class="timestamp">Auto-updated every 15 minutes</div>
+      </div>
+      <img class="chart-image" src="btcusd_15m.png">
+    </div>
+
+    <!-- XAUUSD -->
+    <div class="chart-card">
+      <div class="chart-header">
+        <div class="chart-title">XAUUSD 5 Minute</div>
+        <div class="timestamp">Auto-updated every 15 minutes</div>
+      </div>
+      <img class="chart-image" src="xauusd_5m.png">
+    </div>
+
+    <div class="chart-card">
+      <div class="chart-header">
+        <div class="chart-title">XAUUSD 15 Minute</div>
+        <div class="timestamp">Auto-updated every 15 minutes</div>
+      </div>
+      <img class="chart-image" src="xauusd_15m.png">
+    </div>
+
+  </div>
+
+</body>
+
+</html>

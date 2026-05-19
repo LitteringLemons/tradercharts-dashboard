@@ -1,163 +1,123 @@
+
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <meta charset="UTF-8">
+<meta charset="UTF-8">
+<title>TraderCharts AI Feed</title>
 
-  <!-- Auto refresh page every 60 seconds -->
-  <meta http-equiv="refresh" content="60">
+<style>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+body {
+  background:#0d1117;
+  color:white;
+  font-family:Arial;
+  padding:20px;
+}
 
-  <title>TraderCharts Dashboard</title>
+pre {
+  background:#161b22;
+  padding:15px;
+  border-radius:8px;
+  white-space:pre-wrap;
+}
 
-  <style>
+a {
+  color:#58a6ff;
+}
 
-    body {
-      background-color: #0d1117;
-      color: white;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-    }
-
-    h1 {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
-      gap: 25px;
-    }
-
-    .chart-card {
-      background-color: #161b22;
-      border-radius: 10px;
-      padding: 15px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.4);
-    }
-
-    .chart-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 10px;
-    }
-
-    .chart-title {
-      font-size: 20px;
-      font-weight: bold;
-    }
-
-    .timestamp {
-      font-size: 14px;
-      color: #8b949e;
-    }
-
-    .chart-image {
-      width: 100%;
-      border-radius: 8px;
-      border: 1px solid #30363d;
-    }
-
-  </style>
+</style>
 </head>
 
 <body>
 
-  <h1>TraderCharts Dashboard</h1>
+<h1>TraderCharts AI Feed</h1>
 
-  <div class="grid">
+<p>
+Generated:
+2026-05-19T03:41:10.916Z
+</p>
 
-    <!-- EURUSD -->
-    <div class="chart-card">
-      <div class="chart-header">
-        <div class="chart-title">EURUSD 5 Minute</div>
-        <div class="timestamp">Auto-updated every 15 minutes</div>
-      </div>
-      <img class="chart-image" src="eurusd_5m.png">
-    </div>
+<p>
+<a href="/charts.html">Open Chart Dashboard</a>
+</p>
 
-    <div class="chart-card">
-      <div class="chart-header">
-        <div class="chart-title">EURUSD 15 Minute</div>
-        <div class="timestamp">Auto-updated every 15 minutes</div>
-      </div>
-      <img class="chart-image" src="eurusd_15m.png">
-    </div>
-
-    <!-- GBPUSD -->
-    <div class="chart-card">
-      <div class="chart-header">
-        <div class="chart-title">GBPUSD 5 Minute</div>
-        <div class="timestamp">Auto-updated every 15 minutes</div>
-      </div>
-      <img class="chart-image" src="gbpusd_5m.png">
-    </div>
-
-    <div class="chart-card">
-      <div class="chart-header">
-        <div class="chart-title">GBPUSD 15 Minute</div>
-        <div class="timestamp">Auto-updated every 15 minutes</div>
-      </div>
-      <img class="chart-image" src="gbpusd_15m.png">
-    </div>
-
-    <!-- USDJPY -->
-    <div class="chart-card">
-      <div class="chart-header">
-        <div class="chart-title">USDJPY 5 Minute</div>
-        <div class="timestamp">Auto-updated every 15 minutes</div>
-      </div>
-      <img class="chart-image" src="usdjpy_5m.png">
-    </div>
-
-    <div class="chart-card">
-      <div class="chart-header">
-        <div class="chart-title">USDJPY 15 Minute</div>
-        <div class="timestamp">Auto-updated every 15 minutes</div>
-      </div>
-      <img class="chart-image" src="usdjpy_15m.png">
-    </div>
-
-    <!-- BTCUSD -->
-    <div class="chart-card">
-      <div class="chart-header">
-        <div class="chart-title">BTCUSD 5 Minute</div>
-        <div class="timestamp">Auto-updated every 15 minutes</div>
-      </div>
-      <img class="chart-image" src="btcusd_5m.png">
-    </div>
-
-    <div class="chart-card">
-      <div class="chart-header">
-        <div class="chart-title">BTCUSD 15 Minute</div>
-        <div class="timestamp">Auto-updated every 15 minutes</div>
-      </div>
-      <img class="chart-image" src="btcusd_15m.png">
-    </div>
-
-    <!-- XAUUSD -->
-    <div class="chart-card">
-      <div class="chart-header">
-        <div class="chart-title">XAUUSD 5 Minute</div>
-        <div class="timestamp">Auto-updated every 15 minutes</div>
-      </div>
-      <img class="chart-image" src="xauusd_5m.png">
-    </div>
-
-    <div class="chart-card">
-      <div class="chart-header">
-        <div class="chart-title">XAUUSD 15 Minute</div>
-        <div class="timestamp">Auto-updated every 15 minutes</div>
-      </div>
-      <img class="chart-image" src="xauusd_15m.png">
-    </div>
-
-  </div>
+<pre>
+{
+  "generated_at": "2026-05-19T03:41:10.916Z",
+  "charts": {
+    "eurusd_5m": {
+      "symbol": "EURUSD",
+      "timeframe": "5m",
+      "current_price": 1.16444,
+      "image": "https://www.tradercharts.xyz/eurusd_5m.png",
+      "updated_at": "2026-05-19T03:41:27.517Z"
+    },
+    "eurusd_15m": {
+      "symbol": "EURUSD",
+      "timeframe": "15m",
+      "current_price": 1.16442,
+      "image": "https://www.tradercharts.xyz/eurusd_15m.png",
+      "updated_at": "2026-05-19T03:41:41.343Z"
+    },
+    "gbpusd_5m": {
+      "symbol": "GBPUSD",
+      "timeframe": "5m",
+      "current_price": 1.34173,
+      "image": "https://www.tradercharts.xyz/gbpusd_5m.png",
+      "updated_at": "2026-05-19T03:41:57.949Z"
+    },
+    "gbpusd_15m": {
+      "symbol": "GBPUSD",
+      "timeframe": "15m",
+      "current_price": 1.34174,
+      "image": "https://www.tradercharts.xyz/gbpusd_15m.png",
+      "updated_at": "2026-05-19T03:42:10.933Z"
+    },
+    "usdjpy_5m": {
+      "symbol": "USDJPY",
+      "timeframe": "5m",
+      "current_price": 158.943,
+      "image": "https://www.tradercharts.xyz/usdjpy_5m.png",
+      "updated_at": "2026-05-19T03:42:23.672Z"
+    },
+    "usdjpy_15m": {
+      "symbol": "USDJPY",
+      "timeframe": "15m",
+      "current_price": 158.941,
+      "image": "https://www.tradercharts.xyz/usdjpy_15m.png",
+      "updated_at": "2026-05-19T03:42:35.584Z"
+    },
+    "btcusd_5m": {
+      "symbol": "BTCUSD",
+      "timeframe": "5m",
+      "current_price": 76739,
+      "image": "https://www.tradercharts.xyz/btcusd_5m.png",
+      "updated_at": "2026-05-19T03:42:57.184Z"
+    },
+    "btcusd_15m": {
+      "symbol": "BTCUSD",
+      "timeframe": "15m",
+      "current_price": 76747,
+      "image": "https://www.tradercharts.xyz/btcusd_15m.png",
+      "updated_at": "2026-05-19T03:43:22.653Z"
+    },
+    "xauusd_5m": {
+      "symbol": "XAUUSD",
+      "timeframe": "5m",
+      "current_price": 4549.485,
+      "image": "https://www.tradercharts.xyz/xauusd_5m.png",
+      "updated_at": "2026-05-19T03:43:49.708Z"
+    },
+    "xauusd_15m": {
+      "symbol": "XAUUSD",
+      "timeframe": "15m",
+      "current_price": 4549.32,
+      "image": "https://www.tradercharts.xyz/xauusd_15m.png",
+      "updated_at": "2026-05-19T03:44:02.472Z"
+    }
+  }
+}
+</pre>
 
 </body>
-
 </html>
