@@ -1,75 +1,75 @@
 {
-  "generated_at": "2026-05-19T05:00:05.152Z",
+  "generated_at": "2026-05-19T05:15:05.134Z",
   "charts": {
     "eurusd_5m": {
       "symbol": "EURUSD",
       "timeframe": "5m",
-      "current_price": 1.16369,
+      "current_price": 1.16384,
       "image": "https://www.tradercharts.xyz/eurusd_5m.png",
-      "updated_at": "2026-05-19T05:00:19.739Z"
+      "updated_at": "2026-05-19T05:15:19.954Z"
     },
     "eurusd_15m": {
       "symbol": "EURUSD",
       "timeframe": "15m",
-      "current_price": 1.16364,
+      "current_price": 1.16385,
       "image": "https://www.tradercharts.xyz/eurusd_15m.png",
-      "updated_at": "2026-05-19T05:00:31.504Z"
+      "updated_at": "2026-05-19T05:15:34.549Z"
     },
     "gbpusd_5m": {
       "symbol": "GBPUSD",
       "timeframe": "5m",
       "current_price": 1.34072,
       "image": "https://www.tradercharts.xyz/gbpusd_5m.png",
-      "updated_at": "2026-05-19T05:00:44.677Z"
+      "updated_at": "2026-05-19T05:15:46.428Z"
     },
     "gbpusd_15m": {
       "symbol": "GBPUSD",
       "timeframe": "15m",
-      "current_price": 1.34076,
+      "current_price": 1.34072,
       "image": "https://www.tradercharts.xyz/gbpusd_15m.png",
-      "updated_at": "2026-05-19T05:00:56.795Z"
+      "updated_at": "2026-05-19T05:15:58.331Z"
     },
     "usdjpy_5m": {
       "symbol": "USDJPY",
       "timeframe": "5m",
-      "current_price": 158.993,
+      "current_price": 158.984,
       "image": "https://www.tradercharts.xyz/usdjpy_5m.png",
-      "updated_at": "2026-05-19T05:01:08.866Z"
+      "updated_at": "2026-05-19T05:16:10.552Z"
     },
     "usdjpy_15m": {
       "symbol": "USDJPY",
       "timeframe": "15m",
-      "current_price": 158.992,
+      "current_price": 158.983,
       "image": "https://www.tradercharts.xyz/usdjpy_15m.png",
-      "updated_at": "2026-05-19T05:01:20.507Z"
+      "updated_at": "2026-05-19T05:16:22.822Z"
     },
     "btcusd_5m": {
       "symbol": "BTCUSD",
       "timeframe": "5m",
-      "current_price": 76863,
+      "current_price": 76781,
       "image": "https://www.tradercharts.xyz/btcusd_5m.png",
-      "updated_at": "2026-05-19T05:01:32.307Z"
+      "updated_at": "2026-05-19T05:16:34.847Z"
     },
     "btcusd_15m": {
       "symbol": "BTCUSD",
       "timeframe": "15m",
-      "current_price": 76863,
+      "current_price": 76768,
       "image": "https://www.tradercharts.xyz/btcusd_15m.png",
-      "updated_at": "2026-05-19T05:01:43.976Z"
+      "updated_at": "2026-05-19T05:16:46.746Z"
     },
     "xauusd_5m": {
       "symbol": "XAUUSD",
       "timeframe": "5m",
-      "current_price": 4544.48,
+      "current_price": 4543.315,
       "image": "https://www.tradercharts.xyz/xauusd_5m.png",
-      "updated_at": "2026-05-19T05:01:56.157Z"
+      "updated_at": "2026-05-19T05:16:58.852Z"
     },
     "xauusd_15m": {
       "symbol": "XAUUSD",
       "timeframe": "15m",
-      "current_price": 4544.26,
+      "current_price": 4542.745,
       "image": "https://www.tradercharts.xyz/xauusd_15m.png",
-      "updated_at": "2026-05-19T05:02:08.088Z"
+      "updated_at": "2026-05-19T05:17:10.807Z"
     }
   }
 }
