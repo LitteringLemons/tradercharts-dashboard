@@ -1,3 +1,3 @@
-2026/05/20-15:02:02.120 120f Reusing MANIFEST /home/kidintheflannel/tradingcharts/userdata/Default/IndexedDB/https_www.tradingview.com_0.indexeddb.leveldb/MANIFEST-000001
-2026/05/20-15:02:02.129 120f Recovering log #35
-2026/05/20-15:02:02.419 120f Reusing old log /home/kidintheflannel/tradingcharts/userdata/Default/IndexedDB/https_www.tradingview.com_0.indexeddb.leveldb/000035.log 
+2026/05/20-15:15:53.763 12e5 Reusing MANIFEST /home/kidintheflannel/tradingcharts/userdata/Default/IndexedDB/https_www.tradingview.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/05/20-15:15:53.767 12e5 Recovering log #35
+2026/05/20-15:15:53.939 12e5 Reusing old log /home/kidintheflannel/tradingcharts/userdata/Default/IndexedDB/https_www.tradingview.com_0.indexeddb.leveldb/000035.log 
