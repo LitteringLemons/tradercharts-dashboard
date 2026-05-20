@@ -277,7 +277,7 @@ const sharp = require('sharp');
         1600 * scale,
         820 * scale
       )
-      .toBuffer()
+      .toBuffer(),
 
       left: col * (1600 * scale),
       top: row * (820 * scale)
