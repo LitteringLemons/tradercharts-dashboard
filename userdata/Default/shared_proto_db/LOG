@@ -1,3 +1,3 @@
-2026/05/20-13:45:07.127 db8 Reusing MANIFEST /home/kidintheflannel/tradingcharts/userdata/Default/shared_proto_db/MANIFEST-000001
-2026/05/20-13:45:07.134 db8 Recovering log #3
-2026/05/20-13:45:07.142 db8 Reusing old log /home/kidintheflannel/tradingcharts/userdata/Default/shared_proto_db/000003.log 
+2026/05/20-14:00:05.406 e94 Reusing MANIFEST /home/kidintheflannel/tradingcharts/userdata/Default/shared_proto_db/MANIFEST-000001
+2026/05/20-14:00:05.407 e94 Recovering log #3
+2026/05/20-14:00:05.410 e94 Reusing old log /home/kidintheflannel/tradingcharts/userdata/Default/shared_proto_db/000003.log 
