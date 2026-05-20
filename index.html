@@ -14,47 +14,40 @@ body {
   color:white;
   font-family:Arial;
   padding:20px;
+  text-align:center;
 }
 
 h1 {
   color:#58a6ff;
 }
 
-.row {
-  display:flex;
-  gap:20px;
+.generated {
+  color:#c9d1d9;
   margin-bottom:25px;
 }
 
-.chart-card {
-  flex:1;
-  background:#161b22;
-  padding:15px;
-  border-radius:10px;
-}
-
-.chart-card img {
+.dashboard {
   width:100%;
-  border-radius:8px;
+  max-width:3200px;
+  border-radius:12px;
+  box-shadow:0 0 20px rgba(0,0,0,0.35);
 }
 
-.chart-card h3 {
-  margin-top:0;
-}
+.copy-btn {
 
-.prompt-box {
-  margin-top:40px;
-  background:#161b22;
-  border:2px solid #58a6ff;
-  padding:20px;
+  margin-top:35px;
+  background:#238636;
+  color:white;
+  border:none;
+  padding:16px 32px;
   border-radius:10px;
+  font-size:20px;
+  font-weight:bold;
+  cursor:pointer;
 }
 
-pre {
-  background:#0d1117;
-  padding:15px;
-  border-radius:8px;
-  white-space:pre-wrap;
+.copy-btn:hover {
+  background:#2ea043;
 }
 
 </style>
@@ -65,107 +58,58 @@ pre {
 
 <h1>TraderCharts Dashboard</h1>
 
-<p>
+<p class="generated">
 Generated:
-2026-05-20T22:30:06.207Z
+2026-05-20T22:30:45.352Z
 </p>
 
+<img
+  class="dashboard"
+  src="dashboard.png?t=20260520_223045"
+>
 
-      <div class="row">
+<br>
 
-        <div class="chart-card">
-          <h3>EURUSD 5m</h3>
-          <img src="eurusd_5m.png?t=20260520_223006">
-        </div>
+<button
+  class="copy-btn"
+  onclick="copyDashboard()"
+>
+Copy Dashboard
+</button>
 
-        <div class="chart-card">
-          <h3>EURUSD 15m</h3>
-          <img src="eurusd_15m.png?t=20260520_223006">
-        </div>
+<script>
 
-      </div>
-    
-      <div class="row">
+async function copyDashboard() {
 
-        <div class="chart-card">
-          <h3>GBPUSD 5m</h3>
-          <img src="gbpusd_5m.png?t=20260520_223006">
-        </div>
+  try {
 
-        <div class="chart-card">
-          <h3>GBPUSD 15m</h3>
-          <img src="gbpusd_15m.png?t=20260520_223006">
-        </div>
+    const response = await fetch(
+      'dashboard.png?t=20260520_223045'
+    );
 
-      </div>
-    
-      <div class="row">
+    const blob = await response.blob();
 
-        <div class="chart-card">
-          <h3>USDJPY 5m</h3>
-          <img src="usdjpy_5m.png?t=20260520_223006">
-        </div>
+    await navigator.clipboard.write([
+      new ClipboardItem({
+        [blob.type]: blob
+      })
+    ]);
 
-        <div class="chart-card">
-          <h3>USDJPY 15m</h3>
-          <img src="usdjpy_15m.png?t=20260520_223006">
-        </div>
+    alert(
+      'Dashboard copied to clipboard.'
+    );
 
-      </div>
-    
-      <div class="row">
+  } catch (err) {
 
-        <div class="chart-card">
-          <h3>BTCUSD 5m</h3>
-          <img src="btcusd_5m.png?t=20260520_223006">
-        </div>
+    console.error(err);
 
-        <div class="chart-card">
-          <h3>BTCUSD 15m</h3>
-          <img src="btcusd_15m.png?t=20260520_223006">
-        </div>
+    alert(
+      'Copy failed. Browser may not support image clipboard access.'
+    );
+  }
+}
 
-      </div>
-    
-      <div class="row">
-
-        <div class="chart-card">
-          <h3>XAUUSD 5m</h3>
-          <img src="xauusd_5m.png?t=20260520_223006">
-        </div>
-
-        <div class="chart-card">
-          <h3>XAUUSD 15m</h3>
-          <img src="xauusd_15m.png?t=20260520_223006">
-        </div>
-
-      </div>
-    
-
-<div class="prompt-box">
-
-<h2>ChatGPT Review Prompt</h2>
-
-<p>
-Copy and paste:
-</p>
-
-<pre>
-Open and review these exact URLs:
-
-https://www.tradercharts.xyz/eurusd_5m.png?t=20260520_223006
-https://www.tradercharts.xyz/eurusd_15m.png?t=20260520_223006
-https://www.tradercharts.xyz/gbpusd_5m.png?t=20260520_223006
-https://www.tradercharts.xyz/gbpusd_15m.png?t=20260520_223006
-https://www.tradercharts.xyz/usdjpy_5m.png?t=20260520_223006
-https://www.tradercharts.xyz/usdjpy_15m.png?t=20260520_223006
-https://www.tradercharts.xyz/btcusd_5m.png?t=20260520_223006
-https://www.tradercharts.xyz/btcusd_15m.png?t=20260520_223006
-https://www.tradercharts.xyz/xauusd_5m.png?t=20260520_223006
-https://www.tradercharts.xyz/xauusd_15m.png?t=20260520_223006
-</pre>
-
-</div>
+</script>
 
 </body>
 </html>

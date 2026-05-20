@@ -255,8 +255,10 @@ const sharp = require('sharp');
 
   // BUILD dashboard.png (2-column stitched image)
 
-  const imgWidth = 1600;
-  const imgHeight = 820;
+  const scale = 2;
+
+  const imgWidth = 1600 * scale;
+  const imgHeight = 820 * scale;
   const cols = 2;
   const rows = Math.ceil(homepageCharts.length / cols);
 
@@ -268,9 +270,17 @@ const sharp = require('sharp');
     const row = Math.floor(i / cols);
 
     composites.push({
-      input: homepageCharts[i].image,
-      left: col * imgWidth,
-      top: row * imgHeight
+      input: await sharp(
+        homepageCharts[i].image
+      )
+      .resize(
+        1600 * scale,
+        820 * scale
+      )
+      .toBuffer()
+
+      left: col * (1600 * scale),
+      top: row * (820 * scale)
     });
   }
 
