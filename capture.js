@@ -2,7 +2,6 @@ const { chromium } = require('playwright');
 const fs = require('fs');
 const sharp = require('sharp');
 
-
 (async () => {
 
   const context = await chromium.launchPersistentContext('./userdata', {
@@ -78,62 +77,98 @@ const sharp = require('sharp');
     }
   ];
 
-  const latestData = {
-    generated_at: new Date().toISOString(),
-    charts: {}
-  };
+  const generatedAt = new Date().toISOString();
 
+  async function addWatermark(
+    filename,
+    symbol,
+    timeframe,
+    price,
+    timestamp
+  ) {
 
-async function addTimestampWatermark(filename, timestamp) {
+    const displayPrice = price !== null
+      ? price
+      : 'UNAVAILABLE';
 
-  const svg = `
-  <svg width="450" height="90">
-    <rect
-      width="450"
-      height="90"
-      fill="black"
-      fill-opacity="0.75"
-    />
-    <text
-      x="15"
-      y="35"
-      font-size="26"
-      fill="white"
-      font-family="sans-serif"
-      font-weight="bold"
-    >
-      TraderCharts
-    </text>
-    <text
-      x="15"
-      y="70"
-      font-size="22"
-      fill="#58a6ff"
-      font-family="sans-serif"
-    >
-      ${timestamp}
-    </text>
-  </svg>
-  `;
+    const svg = `
+    <svg width="520" height="165">
 
-  const tempFile = filename + ".tmp";
+      <rect
+        width="520"
+        height="165"
+        fill="black"
+        fill-opacity="0.80"
+        rx="12"
+      />
 
-  await sharp(filename)
-    .composite([
-      {
-        input: Buffer.from(svg),
-        gravity: 'northwest'
-      }
-    ])
-    .png()
-    .toFile(tempFile);
+      <text
+        x="18"
+        y="35"
+        font-size="30"
+        fill="white"
+        font-family="Arial"
+        font-weight="bold"
+      >
+        TraderCharts
+      </text>
 
-  const fs = require('fs');
+      <text
+        x="18"
+        y="72"
+        font-size="26"
+        fill="#58a6ff"
+        font-family="Arial"
+        font-weight="bold"
+      >
+        ${symbol} ${timeframe}
+      </text>
 
-  fs.renameSync(tempFile, filename);
+      <text
+        x="18"
+        y="112"
+        font-size="24"
+        fill="white"
+        font-family="Arial"
+      >
+        Price: ${displayPrice}
+      </text>
 
-  console.log(`Watermark added to ${filename}`);
-}
+      <text
+        x="18"
+        y="148"
+        font-size="20"
+        fill="#c9d1d9"
+        font-family="Arial"
+      >
+        Updated: ${timestamp}
+      </text>
+
+    </svg>
+    `;
+
+    const tempFile = filename + '.tmp.png';
+
+    await sharp(filename)
+      .composite([
+        {
+          input: Buffer.from(svg),
+          gravity: 'northwest'
+        }
+      ])
+      .png()
+      .toFile(tempFile);
+
+    fs.renameSync(tempFile, filename);
+
+    console.log(`Watermark added to ${filename}`);
+  }
+
+  const homepageCharts = [];
+  const timestamp = generatedAt
+    .replace(/[-:]/g, '')
+    .replace('T', '_')
+    .split('.')[0];
 
   for (const chart of charts) {
 
@@ -144,29 +179,6 @@ async function addTimestampWatermark(filename, timestamp) {
     });
 
     await page.waitForTimeout(10000);
-
-    // Screenshot
-const screenshotPath = `${chart.name}.png`;
-
-await page.screenshot({
-  path: screenshotPath,
-  clip: {
-    x: 0,
-    y: 80,
-    width: 1600,
-    height: 820
-  }
-});
-
-await addTimestampWatermark(
-  screenshotPath,
-  new Date().toISOString().replace('T',' ').slice(0,16) + ' UTC'
-);
-
-console.log(`Saved ${screenshotPath}`);
-
-
-    // Extract price
 
     const bodyText = await page.locator('body').innerText();
 
@@ -187,55 +199,61 @@ console.log(`Saved ${screenshotPath}`);
 
     } catch (err) {
 
-      console.log(`Could not extract price for ${chart.symbol}`);
+      console.log(
+        `WARNING: Price extraction failed for ${chart.symbol}`
+      );
     }
 
-    // Per-chart JSON
+    if (currentPrice === null) {
 
-    const metadata = {
-      symbol: chart.symbol,
-      timeframe: chart.timeframe,
-      current_price: currentPrice,
-      screenshot: `${chart.name}.png`,
-      updated_at: new Date().toISOString()
-    };
+      console.log(
+        `WARNING: ${chart.symbol} ${chart.timeframe} = UNAVAILABLE`
+      );
+    } else {
 
-    fs.writeFileSync(
-      `${chart.name}.json`,
-      JSON.stringify(metadata, null, 2)
+      console.log(
+        `${chart.symbol} ${chart.timeframe} price: ${currentPrice}`
+      );
+    }
+
+    const screenshotPath = `${chart.name}.png`;
+
+    await page.screenshot({
+      path: screenshotPath,
+      clip: {
+        x: 0,
+        y: 80,
+        width: 1600,
+        height: 820
+      }
+    });
+
+    const utcStamp =
+      new Date()
+        .toISOString()
+        .replace('T', ' ')
+        .slice(0, 16) + ' UTC';
+
+    await addWatermark(
+      screenshotPath,
+      chart.symbol,
+      chart.timeframe,
+      currentPrice,
+      utcStamp
     );
 
-    console.log(`Saved ${chart.name}.json`);
-
-    latestData.charts[chart.name] = {
+    homepageCharts.push({
       symbol: chart.symbol,
       timeframe: chart.timeframe,
-      current_price: currentPrice,
-      image: `https://www.tradercharts.xyz/${chart.name}.png`,
-      updated_at: metadata.updated_at
-    };
+      image: screenshotPath
+    });
+
+    console.log(`Saved ${screenshotPath}`);
   }
 
-  // latest.json
-
-  fs.writeFileSync(
-    'latest.json',
-    JSON.stringify(latestData, null, 2)
-  );
-
-  console.log('Saved latest.json');
-
-  // INDEX.HTML = AI HOMEPAGE
-
-const timestamp = latestData.generated_at
-  .replace(/[-:]/g, '')
-  .replace('T', '_')
-  .split('.')[0];
-
-const promptText = `
+  const promptText = `
 Open and review these exact URLs:
 
-https://www.tradercharts.xyz/latest.json?t=${timestamp}
 https://www.tradercharts.xyz/eurusd_5m.png?t=${timestamp}
 https://www.tradercharts.xyz/eurusd_15m.png?t=${timestamp}
 https://www.tradercharts.xyz/gbpusd_5m.png?t=${timestamp}
@@ -248,12 +266,38 @@ https://www.tradercharts.xyz/xauusd_5m.png?t=${timestamp}
 https://www.tradercharts.xyz/xauusd_15m.png?t=${timestamp}
 `;
 
-let homepage = `
+  let chartHtml = '';
+
+  for (let i = 0; i < homepageCharts.length; i += 2) {
+
+    const left = homepageCharts[i];
+    const right = homepageCharts[i + 1];
+
+    chartHtml += `
+      <div class="row">
+
+        <div class="chart-card">
+          <h3>${left.symbol} ${left.timeframe}</h3>
+          <img src="${left.image}?t=${timestamp}">
+        </div>
+
+        <div class="chart-card">
+          <h3>${right.symbol} ${right.timeframe}</h3>
+          <img src="${right.image}?t=${timestamp}">
+        </div>
+
+      </div>
+    `;
+  }
+
+  let homepage = `
 <!DOCTYPE html>
 <html>
+
 <head>
+
 <meta charset="UTF-8">
-<title>TraderCharts AI Feed</title>
+<title>TraderCharts</title>
 
 <style>
 
@@ -264,11 +308,30 @@ body {
   padding:20px;
 }
 
-pre {
+h1 {
+  color:#58a6ff;
+}
+
+.row {
+  display:flex;
+  gap:20px;
+  margin-bottom:25px;
+}
+
+.chart-card {
+  flex:1;
   background:#161b22;
   padding:15px;
+  border-radius:10px;
+}
+
+.chart-card img {
+  width:100%;
   border-radius:8px;
-  white-space:pre-wrap;
+}
+
+.chart-card h3 {
+  margin-top:0;
 }
 
 .prompt-box {
@@ -279,37 +342,37 @@ pre {
   border-radius:10px;
 }
 
-h2 {
-  color:#58a6ff;
+pre {
+  background:#0d1117;
+  padding:15px;
+  border-radius:8px;
+  white-space:pre-wrap;
 }
 
 </style>
+
 </head>
 
 <body>
 
-<h1>TraderCharts AI Feed</h1>
+<h1>TraderCharts Dashboard</h1>
 
 <p>
 Generated:
-${latestData.generated_at}
+${generatedAt}
 </p>
 
-<pre>
-${JSON.stringify(latestData, null, 2)}
-</pre>
+${chartHtml}
 
 <div class="prompt-box">
 
 <h2>ChatGPT Review Prompt</h2>
 
 <p>
-Copy and paste this prompt:
+Copy and paste:
 </p>
 
-<pre>
-${promptText}
-</pre>
+<pre>${promptText}</pre>
 
 </div>
 
@@ -326,6 +389,6 @@ ${promptText}
 
   await context.close();
 
-  console.log('All screenshots and metadata complete.');
+  console.log('All screenshots complete.');
 
 })();
