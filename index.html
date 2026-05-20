@@ -1,9 +1,11 @@
 
 <!DOCTYPE html>
 <html>
+
 <head>
+
 <meta charset="UTF-8">
-<title>TraderCharts AI Feed</title>
+<title>TraderCharts</title>
 
 <style>
 
@@ -14,11 +16,30 @@ body {
   padding:20px;
 }
 
-pre {
+h1 {
+  color:#58a6ff;
+}
+
+.row {
+  display:flex;
+  gap:20px;
+  margin-bottom:25px;
+}
+
+.chart-card {
+  flex:1;
   background:#161b22;
   padding:15px;
+  border-radius:10px;
+}
+
+.chart-card img {
+  width:100%;
   border-radius:8px;
-  white-space:pre-wrap;
+}
+
+.chart-card h3 {
+  margin-top:0;
 }
 
 .prompt-box {
@@ -29,124 +50,119 @@ pre {
   border-radius:10px;
 }
 
-h2 {
-  color:#58a6ff;
+pre {
+  background:#0d1117;
+  padding:15px;
+  border-radius:8px;
+  white-space:pre-wrap;
 }
 
 </style>
+
 </head>
 
 <body>
 
-<h1>TraderCharts AI Feed</h1>
+<h1>TraderCharts Dashboard</h1>
 
 <p>
 Generated:
-2026-05-20T15:45:05.276Z
+2026-05-20T16:00:06.362Z
 </p>
 
-<pre>
-{
-  "generated_at": "2026-05-20T15:45:05.276Z",
-  "charts": {
-    "eurusd_5m": {
-      "symbol": "EURUSD",
-      "timeframe": "5m",
-      "current_price": 1.16269,
-      "image": "https://www.tradercharts.xyz/eurusd_5m.png",
-      "updated_at": "2026-05-20T15:45:20.307Z"
-    },
-    "eurusd_15m": {
-      "symbol": "EURUSD",
-      "timeframe": "15m",
-      "current_price": 1.1627,
-      "image": "https://www.tradercharts.xyz/eurusd_15m.png",
-      "updated_at": "2026-05-20T15:45:33.276Z"
-    },
-    "gbpusd_5m": {
-      "symbol": "GBPUSD",
-      "timeframe": "5m",
-      "current_price": 1.34517,
-      "image": "https://www.tradercharts.xyz/gbpusd_5m.png",
-      "updated_at": "2026-05-20T15:45:46.733Z"
-    },
-    "gbpusd_15m": {
-      "symbol": "GBPUSD",
-      "timeframe": "15m",
-      "current_price": 1.34513,
-      "image": "https://www.tradercharts.xyz/gbpusd_15m.png",
-      "updated_at": "2026-05-20T15:45:58.556Z"
-    },
-    "usdjpy_5m": {
-      "symbol": "USDJPY",
-      "timeframe": "5m",
-      "current_price": 158.768,
-      "image": "https://www.tradercharts.xyz/usdjpy_5m.png",
-      "updated_at": "2026-05-20T15:46:10.465Z"
-    },
-    "usdjpy_15m": {
-      "symbol": "USDJPY",
-      "timeframe": "15m",
-      "current_price": 158.759,
-      "image": "https://www.tradercharts.xyz/usdjpy_15m.png",
-      "updated_at": "2026-05-20T15:46:21.911Z"
-    },
-    "btcusd_5m": {
-      "symbol": "BTCUSD",
-      "timeframe": "5m",
-      "current_price": 77417,
-      "image": "https://www.tradercharts.xyz/btcusd_5m.png",
-      "updated_at": "2026-05-20T15:46:33.548Z"
-    },
-    "btcusd_15m": {
-      "symbol": "BTCUSD",
-      "timeframe": "15m",
-      "current_price": 77433,
-      "image": "https://www.tradercharts.xyz/btcusd_15m.png",
-      "updated_at": "2026-05-20T15:46:45.852Z"
-    },
-    "xauusd_5m": {
-      "symbol": "XAUUSD",
-      "timeframe": "5m",
-      "current_price": 4536.625,
-      "image": "https://www.tradercharts.xyz/xauusd_5m.png",
-      "updated_at": "2026-05-20T15:46:57.642Z"
-    },
-    "xauusd_15m": {
-      "symbol": "XAUUSD",
-      "timeframe": "15m",
-      "current_price": 4536.1,
-      "image": "https://www.tradercharts.xyz/xauusd_15m.png",
-      "updated_at": "2026-05-20T15:47:09.111Z"
-    }
-  }
-}
-</pre>
+
+      <div class="row">
+
+        <div class="chart-card">
+          <h3>EURUSD 5m</h3>
+          <img src="eurusd_5m.png?t=20260520_160006">
+        </div>
+
+        <div class="chart-card">
+          <h3>EURUSD 15m</h3>
+          <img src="eurusd_15m.png?t=20260520_160006">
+        </div>
+
+      </div>
+    
+      <div class="row">
+
+        <div class="chart-card">
+          <h3>GBPUSD 5m</h3>
+          <img src="gbpusd_5m.png?t=20260520_160006">
+        </div>
+
+        <div class="chart-card">
+          <h3>GBPUSD 15m</h3>
+          <img src="gbpusd_15m.png?t=20260520_160006">
+        </div>
+
+      </div>
+    
+      <div class="row">
+
+        <div class="chart-card">
+          <h3>USDJPY 5m</h3>
+          <img src="usdjpy_5m.png?t=20260520_160006">
+        </div>
+
+        <div class="chart-card">
+          <h3>USDJPY 15m</h3>
+          <img src="usdjpy_15m.png?t=20260520_160006">
+        </div>
+
+      </div>
+    
+      <div class="row">
+
+        <div class="chart-card">
+          <h3>BTCUSD 5m</h3>
+          <img src="btcusd_5m.png?t=20260520_160006">
+        </div>
+
+        <div class="chart-card">
+          <h3>BTCUSD 15m</h3>
+          <img src="btcusd_15m.png?t=20260520_160006">
+        </div>
+
+      </div>
+    
+      <div class="row">
+
+        <div class="chart-card">
+          <h3>XAUUSD 5m</h3>
+          <img src="xauusd_5m.png?t=20260520_160006">
+        </div>
+
+        <div class="chart-card">
+          <h3>XAUUSD 15m</h3>
+          <img src="xauusd_15m.png?t=20260520_160006">
+        </div>
+
+      </div>
+    
 
 <div class="prompt-box">
 
 <h2>ChatGPT Review Prompt</h2>
 
 <p>
-Copy and paste this prompt:
+Copy and paste:
 </p>
 
 <pre>
-
 Open and review these exact URLs:
 
-https://www.tradercharts.xyz/latest.json?t=20260520_154505
-https://www.tradercharts.xyz/eurusd_5m.png?t=20260520_154505
-https://www.tradercharts.xyz/eurusd_15m.png?t=20260520_154505
-https://www.tradercharts.xyz/gbpusd_5m.png?t=20260520_154505
-https://www.tradercharts.xyz/gbpusd_15m.png?t=20260520_154505
-https://www.tradercharts.xyz/usdjpy_5m.png?t=20260520_154505
-https://www.tradercharts.xyz/usdjpy_15m.png?t=20260520_154505
-https://www.tradercharts.xyz/btcusd_5m.png?t=20260520_154505
-https://www.tradercharts.xyz/btcusd_15m.png?t=20260520_154505
-https://www.tradercharts.xyz/xauusd_5m.png?t=20260520_154505
-https://www.tradercharts.xyz/xauusd_15m.png?t=20260520_154505
-
+https://www.tradercharts.xyz/eurusd_5m.png?t=20260520_160006
+https://www.tradercharts.xyz/eurusd_15m.png?t=20260520_160006
+https://www.tradercharts.xyz/gbpusd_5m.png?t=20260520_160006
+https://www.tradercharts.xyz/gbpusd_15m.png?t=20260520_160006
+https://www.tradercharts.xyz/usdjpy_5m.png?t=20260520_160006
+https://www.tradercharts.xyz/usdjpy_15m.png?t=20260520_160006
+https://www.tradercharts.xyz/btcusd_5m.png?t=20260520_160006
+https://www.tradercharts.xyz/btcusd_15m.png?t=20260520_160006
+https://www.tradercharts.xyz/xauusd_5m.png?t=20260520_160006
+https://www.tradercharts.xyz/xauusd_15m.png?t=20260520_160006
 </pre>
 
 </div>
