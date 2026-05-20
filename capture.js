@@ -166,7 +166,28 @@ const fs = require('fs');
 
   // INDEX.HTML = AI HOMEPAGE
 
-  let homepage = `
+const timestamp = latestData.generated_at
+  .replace(/[-:]/g, '')
+  .replace('T', '_')
+  .split('.')[0];
+
+const promptText = `
+Open and review these exact URLs:
+
+https://www.tradercharts.xyz/latest.json?t=${timestamp}
+https://www.tradercharts.xyz/eurusd_5m.png?t=${timestamp}
+https://www.tradercharts.xyz/eurusd_15m.png?t=${timestamp}
+https://www.tradercharts.xyz/gbpusd_5m.png?t=${timestamp}
+https://www.tradercharts.xyz/gbpusd_15m.png?t=${timestamp}
+https://www.tradercharts.xyz/usdjpy_5m.png?t=${timestamp}
+https://www.tradercharts.xyz/usdjpy_15m.png?t=${timestamp}
+https://www.tradercharts.xyz/btcusd_5m.png?t=${timestamp}
+https://www.tradercharts.xyz/btcusd_15m.png?t=${timestamp}
+https://www.tradercharts.xyz/xauusd_5m.png?t=${timestamp}
+https://www.tradercharts.xyz/xauusd_15m.png?t=${timestamp}
+`;
+
+let homepage = `
 <!DOCTYPE html>
 <html>
 <head>
@@ -189,7 +210,15 @@ pre {
   white-space:pre-wrap;
 }
 
-a {
+.prompt-box {
+  margin-top:40px;
+  background:#161b22;
+  border:2px solid #58a6ff;
+  padding:20px;
+  border-radius:10px;
+}
+
+h2 {
   color:#58a6ff;
 }
 
@@ -205,13 +234,23 @@ Generated:
 ${latestData.generated_at}
 </p>
 
-<p>
-<a href="/charts.html">Open Chart Dashboard</a>
-</p>
-
 <pre>
 ${JSON.stringify(latestData, null, 2)}
 </pre>
+
+<div class="prompt-box">
+
+<h2>ChatGPT Review Prompt</h2>
+
+<p>
+Copy and paste this prompt:
+</p>
+
+<pre>
+${promptText}
+</pre>
+
+</div>
 
 </body>
 </html>
