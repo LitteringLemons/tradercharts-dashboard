@@ -165,6 +165,7 @@ const sharp = require('sharp');
   }
 
   const homepageCharts = [];
+
   const timestamp = generatedAt
     .replace(/[-:]/g, '')
     .replace('T', '_')
@@ -209,6 +210,7 @@ const sharp = require('sharp');
       console.log(
         `WARNING: ${chart.symbol} ${chart.timeframe} = UNAVAILABLE`
       );
+
     } else {
 
       console.log(
@@ -251,44 +253,45 @@ const sharp = require('sharp');
     console.log(`Saved ${screenshotPath}`);
   }
 
-  const promptText = `
-Open and review these exact URLs:
+  // BUILD dashboard.png (2-column stitched image)
 
-https://www.tradercharts.xyz/eurusd_5m.png?t=${timestamp}
-https://www.tradercharts.xyz/eurusd_15m.png?t=${timestamp}
-https://www.tradercharts.xyz/gbpusd_5m.png?t=${timestamp}
-https://www.tradercharts.xyz/gbpusd_15m.png?t=${timestamp}
-https://www.tradercharts.xyz/usdjpy_5m.png?t=${timestamp}
-https://www.tradercharts.xyz/usdjpy_15m.png?t=${timestamp}
-https://www.tradercharts.xyz/btcusd_5m.png?t=${timestamp}
-https://www.tradercharts.xyz/btcusd_15m.png?t=${timestamp}
-https://www.tradercharts.xyz/xauusd_5m.png?t=${timestamp}
-https://www.tradercharts.xyz/xauusd_15m.png?t=${timestamp}
-`;
+  const imgWidth = 1600;
+  const imgHeight = 820;
+  const cols = 2;
+  const rows = Math.ceil(homepageCharts.length / cols);
 
-  let chartHtml = '';
+  const composites = [];
 
-  for (let i = 0; i < homepageCharts.length; i += 2) {
+  for (let i = 0; i < homepageCharts.length; i++) {
 
-    const left = homepageCharts[i];
-    const right = homepageCharts[i + 1];
+    const col = i % cols;
+    const row = Math.floor(i / cols);
 
-    chartHtml += `
-      <div class="row">
-
-        <div class="chart-card">
-          <h3>${left.symbol} ${left.timeframe}</h3>
-          <img src="${left.image}?t=${timestamp}">
-        </div>
-
-        <div class="chart-card">
-          <h3>${right.symbol} ${right.timeframe}</h3>
-          <img src="${right.image}?t=${timestamp}">
-        </div>
-
-      </div>
-    `;
+    composites.push({
+      input: homepageCharts[i].image,
+      left: col * imgWidth,
+      top: row * imgHeight
+    });
   }
+
+  const dashboardWidth = cols * imgWidth;
+  const dashboardHeight = rows * imgHeight;
+
+  await sharp({
+    create: {
+      width: dashboardWidth,
+      height: dashboardHeight,
+      channels: 3,
+      background: '#0d1117'
+    }
+  })
+    .composite(composites)
+    .png()
+    .toFile('dashboard.png');
+
+  console.log('Saved dashboard.png');
+
+  // BUILD HOMEPAGE
 
   let homepage = `
 <!DOCTYPE html>
@@ -306,47 +309,40 @@ body {
   color:white;
   font-family:Arial;
   padding:20px;
+  text-align:center;
 }
 
 h1 {
   color:#58a6ff;
 }
 
-.row {
-  display:flex;
-  gap:20px;
+.generated {
+  color:#c9d1d9;
   margin-bottom:25px;
 }
 
-.chart-card {
-  flex:1;
-  background:#161b22;
-  padding:15px;
-  border-radius:10px;
-}
-
-.chart-card img {
+.dashboard {
   width:100%;
-  border-radius:8px;
+  max-width:3200px;
+  border-radius:12px;
+  box-shadow:0 0 20px rgba(0,0,0,0.35);
 }
 
-.chart-card h3 {
-  margin-top:0;
-}
+.copy-btn {
 
-.prompt-box {
-  margin-top:40px;
-  background:#161b22;
-  border:2px solid #58a6ff;
-  padding:20px;
+  margin-top:35px;
+  background:#238636;
+  color:white;
+  border:none;
+  padding:16px 32px;
   border-radius:10px;
+  font-size:20px;
+  font-weight:bold;
+  cursor:pointer;
 }
 
-pre {
-  background:#0d1117;
-  padding:15px;
-  border-radius:8px;
-  white-space:pre-wrap;
+.copy-btn:hover {
+  background:#2ea043;
 }
 
 </style>
@@ -357,24 +353,58 @@ pre {
 
 <h1>TraderCharts Dashboard</h1>
 
-<p>
+<p class="generated">
 Generated:
 ${generatedAt}
 </p>
 
-${chartHtml}
+<img
+  class="dashboard"
+  src="dashboard.png?t=${timestamp}"
+>
 
-<div class="prompt-box">
+<br>
 
-<h2>ChatGPT Review Prompt</h2>
+<button
+  class="copy-btn"
+  onclick="copyDashboard()"
+>
+Copy Dashboard
+</button>
 
-<p>
-Copy and paste:
-</p>
+<script>
 
-<pre>${promptText}</pre>
+async function copyDashboard() {
 
-</div>
+  try {
+
+    const response = await fetch(
+      'dashboard.png?t=${timestamp}'
+    );
+
+    const blob = await response.blob();
+
+    await navigator.clipboard.write([
+      new ClipboardItem({
+        [blob.type]: blob
+      })
+    ]);
+
+    alert(
+      'Dashboard copied to clipboard.'
+    );
+
+  } catch (err) {
+
+    console.error(err);
+
+    alert(
+      'Copy failed. Browser may not support image clipboard access.'
+    );
+  }
+}
+
+</script>
 
 </body>
 </html>
