@@ -7937,3 +7937,171 @@ After doing this, you may fix the identity used for this commit with:
  create mode 100644 userdata/Default/Code Cache/js/2297ec9621f39723_0
 To https://github.com/LitteringLemons/tradercharts-dashboard.git
    f4d34103..720863d0  main -> main
+[main 6fbba08a] Auto-update charts
+ Committer: kidintheflannel <kidintheflannel@penguin>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 266 files changed, 23247 insertions(+), 116 deletions(-)
+ create mode 120000 node_modules/.bin/semver
+ create mode 100644 node_modules/@img/colour/LICENSE.md
+ create mode 100644 node_modules/@img/colour/README.md
+ create mode 100644 node_modules/@img/colour/color.cjs
+ create mode 100644 node_modules/@img/colour/index.cjs
+ create mode 100644 node_modules/@img/colour/index.d.ts
+ create mode 100644 node_modules/@img/colour/package.json
+ create mode 100644 node_modules/@img/sharp-libvips-linux-x64/README.md
+ create mode 100644 node_modules/@img/sharp-libvips-linux-x64/lib/glib-2.0/include/glibconfig.h
+ create mode 100644 node_modules/@img/sharp-libvips-linux-x64/lib/index.js
+ create mode 100644 node_modules/@img/sharp-libvips-linux-x64/lib/libvips-cpp.so.8.17.3
+ create mode 100644 node_modules/@img/sharp-libvips-linux-x64/package.json
+ create mode 100644 node_modules/@img/sharp-libvips-linux-x64/versions.json
+ create mode 100644 node_modules/@img/sharp-libvips-linuxmusl-x64/README.md
+ create mode 100644 node_modules/@img/sharp-libvips-linuxmusl-x64/lib/glib-2.0/include/glibconfig.h
+ create mode 100644 node_modules/@img/sharp-libvips-linuxmusl-x64/lib/index.js
+ create mode 100644 node_modules/@img/sharp-libvips-linuxmusl-x64/lib/libvips-cpp.so.8.17.3
+ create mode 100644 node_modules/@img/sharp-libvips-linuxmusl-x64/package.json
+ create mode 100644 node_modules/@img/sharp-libvips-linuxmusl-x64/versions.json
+ create mode 100644 node_modules/@img/sharp-linux-x64/LICENSE
+ create mode 100644 node_modules/@img/sharp-linux-x64/README.md
+ create mode 100644 node_modules/@img/sharp-linux-x64/lib/sharp-linux-x64.node
+ create mode 100644 node_modules/@img/sharp-linux-x64/package.json
+ create mode 100644 node_modules/@img/sharp-linuxmusl-x64/LICENSE
+ create mode 100644 node_modules/@img/sharp-linuxmusl-x64/README.md
+ create mode 100644 node_modules/@img/sharp-linuxmusl-x64/lib/sharp-linuxmusl-x64.node
+ create mode 100644 node_modules/@img/sharp-linuxmusl-x64/package.json
+ create mode 100644 node_modules/detect-libc/LICENSE
+ create mode 100644 node_modules/detect-libc/README.md
+ create mode 100644 node_modules/detect-libc/index.d.ts
+ create mode 100644 node_modules/detect-libc/lib/detect-libc.js
+ create mode 100644 node_modules/detect-libc/lib/elf.js
+ create mode 100644 node_modules/detect-libc/lib/filesystem.js
+ create mode 100644 node_modules/detect-libc/lib/process.js
+ create mode 100644 node_modules/detect-libc/package.json
+ create mode 100644 node_modules/semver/LICENSE
+ create mode 100644 node_modules/semver/README.md
+ create mode 100755 node_modules/semver/bin/semver.js
+ create mode 100644 node_modules/semver/classes/comparator.js
+ create mode 100644 node_modules/semver/classes/index.js
+ create mode 100644 node_modules/semver/classes/range.js
+ create mode 100644 node_modules/semver/classes/semver.js
+ create mode 100644 node_modules/semver/functions/clean.js
+ create mode 100644 node_modules/semver/functions/cmp.js
+ create mode 100644 node_modules/semver/functions/coerce.js
+ create mode 100644 node_modules/semver/functions/compare-build.js
+ create mode 100644 node_modules/semver/functions/compare-loose.js
+ create mode 100644 node_modules/semver/functions/compare.js
+ create mode 100644 node_modules/semver/functions/diff.js
+ create mode 100644 node_modules/semver/functions/eq.js
+ create mode 100644 node_modules/semver/functions/gt.js
+ create mode 100644 node_modules/semver/functions/gte.js
+ create mode 100644 node_modules/semver/functions/inc.js
+ create mode 100644 node_modules/semver/functions/lt.js
+ create mode 100644 node_modules/semver/functions/lte.js
+ create mode 100644 node_modules/semver/functions/major.js
+ create mode 100644 node_modules/semver/functions/minor.js
+ create mode 100644 node_modules/semver/functions/neq.js
+ create mode 100644 node_modules/semver/functions/parse.js
+ create mode 100644 node_modules/semver/functions/patch.js
+ create mode 100644 node_modules/semver/functions/prerelease.js
+ create mode 100644 node_modules/semver/functions/rcompare.js
+ create mode 100644 node_modules/semver/functions/rsort.js
+ create mode 100644 node_modules/semver/functions/satisfies.js
+ create mode 100644 node_modules/semver/functions/sort.js
+ create mode 100644 node_modules/semver/functions/truncate.js
+ create mode 100644 node_modules/semver/functions/valid.js
+ create mode 100644 node_modules/semver/index.js
+ create mode 100644 node_modules/semver/internal/constants.js
+ create mode 100644 node_modules/semver/internal/debug.js
+ create mode 100644 node_modules/semver/internal/identifiers.js
+ create mode 100644 node_modules/semver/internal/lrucache.js
+ create mode 100644 node_modules/semver/internal/parse-options.js
+ create mode 100644 node_modules/semver/internal/re.js
+ create mode 100644 node_modules/semver/package.json
+ create mode 100644 node_modules/semver/preload.js
+ create mode 100644 node_modules/semver/range.bnf
+ create mode 100644 node_modules/semver/ranges/gtr.js
+ create mode 100644 node_modules/semver/ranges/intersects.js
+ create mode 100644 node_modules/semver/ranges/ltr.js
+ create mode 100644 node_modules/semver/ranges/max-satisfying.js
+ create mode 100644 node_modules/semver/ranges/min-satisfying.js
+ create mode 100644 node_modules/semver/ranges/min-version.js
+ create mode 100644 node_modules/semver/ranges/outside.js
+ create mode 100644 node_modules/semver/ranges/simplify.js
+ create mode 100644 node_modules/semver/ranges/subset.js
+ create mode 100644 node_modules/semver/ranges/to-comparators.js
+ create mode 100644 node_modules/semver/ranges/valid.js
+ create mode 100644 node_modules/sharp/LICENSE
+ create mode 100644 node_modules/sharp/README.md
+ create mode 100644 node_modules/sharp/install/build.js
+ create mode 100644 node_modules/sharp/install/check.js
+ create mode 100644 node_modules/sharp/lib/channel.js
+ create mode 100644 node_modules/sharp/lib/colour.js
+ create mode 100644 node_modules/sharp/lib/composite.js
+ create mode 100644 node_modules/sharp/lib/constructor.js
+ create mode 100644 node_modules/sharp/lib/index.d.ts
+ create mode 100644 node_modules/sharp/lib/index.js
+ create mode 100644 node_modules/sharp/lib/input.js
+ create mode 100644 node_modules/sharp/lib/is.js
+ create mode 100644 node_modules/sharp/lib/libvips.js
+ create mode 100644 node_modules/sharp/lib/operation.js
+ create mode 100644 node_modules/sharp/lib/output.js
+ create mode 100644 node_modules/sharp/lib/resize.js
+ create mode 100644 node_modules/sharp/lib/sharp.js
+ create mode 100644 node_modules/sharp/lib/utility.js
+ create mode 100644 node_modules/sharp/package.json
+ create mode 100644 node_modules/sharp/src/binding.gyp
+ create mode 100644 node_modules/sharp/src/common.cc
+ create mode 100644 node_modules/sharp/src/common.h
+ create mode 100644 node_modules/sharp/src/metadata.cc
+ create mode 100644 node_modules/sharp/src/metadata.h
+ create mode 100644 node_modules/sharp/src/operations.cc
+ create mode 100644 node_modules/sharp/src/operations.h
+ create mode 100644 node_modules/sharp/src/pipeline.cc
+ create mode 100644 node_modules/sharp/src/pipeline.h
+ create mode 100644 node_modules/sharp/src/sharp.cc
+ create mode 100644 node_modules/sharp/src/stats.cc
+ create mode 100644 node_modules/sharp/src/stats.h
+ create mode 100644 node_modules/sharp/src/utilities.cc
+ create mode 100644 node_modules/sharp/src/utilities.h
+ create mode 100644 userdata/Default/Cache/Cache_Data/078e412183156f77_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/079f8d9c5b8fda99_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/172c1df65d5b77ec_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/180a1f78129cfbfc_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/371142c11af43083_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/41d151cc859c67c5_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/4746a95b15d0c6a9_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/4b10309b251d8ea0_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/4df48d6c39eb6fb6_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/5244133593649554_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/6168fc13117712f2_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/6a76d2b3bc086db5_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/6f21dbbf8d6b1cbd_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/8bf9677c1975c2ce_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/8e9e503739ac4c30_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/8fa2a31b0f38efad_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/9b435c3d61f023dd_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/a57e095183b27e57_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/b3d51240ea6a006e_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/b8f4fbfa758b2df7_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/b9c79704e979f48e_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/c9ba27b36c0e923a_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/d6caf32b185c34cb_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/d6eb501301dc040d_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/db36e5742a8eb10a_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/e3cab551e7f46a92_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/e5c6d30da7173bd0_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/ed487a7e57834e74_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/ee944309b6e8984a_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/efdf66ac11371de3_0
+ create mode 100644 userdata/Default/Code Cache/js/6664eec1260affa1_0
+To https://github.com/LitteringLemons/tradercharts-dashboard.git
+   720863d0..6fbba08a  main -> main
