@@ -1,5 +1,7 @@
 const { chromium } = require('playwright');
 const fs = require('fs');
+const sharp = require('sharp');
+
 
 (async () => {
 
@@ -81,6 +83,58 @@ const fs = require('fs');
     charts: {}
   };
 
+
+async function addTimestampWatermark(filename, timestamp) {
+
+  const svg = `
+  <svg width="450" height="90">
+    <rect
+      width="450"
+      height="90"
+      fill="black"
+      fill-opacity="0.75"
+    />
+    <text
+      x="15"
+      y="35"
+      font-size="26"
+      fill="white"
+      font-family="sans-serif"
+      font-weight="bold"
+    >
+      TraderCharts
+    </text>
+    <text
+      x="15"
+      y="70"
+      font-size="22"
+      fill="#58a6ff"
+      font-family="sans-serif"
+    >
+      ${timestamp}
+    </text>
+  </svg>
+  `;
+
+  const tempFile = filename + ".tmp";
+
+  await sharp(filename)
+    .composite([
+      {
+        input: Buffer.from(svg),
+        gravity: 'northwest'
+      }
+    ])
+    .png()
+    .toFile(tempFile);
+
+  const fs = require('fs');
+
+  fs.renameSync(tempFile, filename);
+
+  console.log(`Watermark added to ${filename}`);
+}
+
   for (const chart of charts) {
 
     console.log(`Loading ${chart.name}...`);
@@ -92,18 +146,25 @@ const fs = require('fs');
     await page.waitForTimeout(10000);
 
     // Screenshot
+const screenshotPath = `${chart.name}.png`;
 
-    await page.screenshot({
-      path: `${chart.name}.png`,
-      clip: {
-        x: 0,
-        y: 80,
-        width: 1600,
-        height: 820
-      }
-    });
+await page.screenshot({
+  path: screenshotPath,
+  clip: {
+    x: 0,
+    y: 80,
+    width: 1600,
+    height: 820
+  }
+});
 
-    console.log(`Saved ${chart.name}.png`);
+await addTimestampWatermark(
+  screenshotPath,
+  new Date().toISOString().replace('T',' ').slice(0,16) + ' UTC'
+);
+
+console.log(`Saved ${screenshotPath}`);
+
 
     // Extract price
 
