@@ -1,3 +1,15 @@
-2026/05/21-17:00:05.798 6cdf Reusing MANIFEST /home/kidintheflannel/tradingcharts/userdata/Default/Local Storage/leveldb/MANIFEST-000001
-2026/05/21-17:00:05.924 6cdf Recovering log #36
-2026/05/21-17:00:05.934 6cdf Reusing old log /home/kidintheflannel/tradingcharts/userdata/Default/Local Storage/leveldb/000036.log 
+2026/05/21-17:15:04.597 6db9 Reusing MANIFEST /home/kidintheflannel/tradingcharts/userdata/Default/Local Storage/leveldb/MANIFEST-000001
+2026/05/21-17:15:04.667 6db9 Recovering log #36
+2026/05/21-17:15:04.672 6db9 Reusing old log /home/kidintheflannel/tradingcharts/userdata/Default/Local Storage/leveldb/000036.log 
+2026/05/21-17:16:04.687 6dba Level-0 table #39: started
+2026/05/21-17:16:04.700 6dba Level-0 table #39: 7210 bytes OK
+2026/05/21-17:16:04.717 6dba Delete type=0 #36
+2026/05/21-17:16:04.719 6db5 Compacting 4@0 + 1@1 files
+2026/05/21-17:16:04.728 6db5 Generated table #40@0: 20 keys, 952 bytes
+2026/05/21-17:16:04.728 6db5 Compacted 4@0 + 1@1 files => 952 bytes
+2026/05/21-17:16:04.738 6db5 compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/05/21-17:16:04.739 6db5 Delete type=2 #27
+2026/05/21-17:16:04.740 6db5 Delete type=2 #30
+2026/05/21-17:16:04.740 6db5 Delete type=2 #33
+2026/05/21-17:16:04.740 6db5 Delete type=2 #35
+2026/05/21-17:16:04.740 6db5 Delete type=2 #39
