@@ -11427,3 +11427,46 @@ SyntaxError: Unexpected identifier
     at node:internal/main/run_main_module:28:49
 
 Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16238
+Watermark added to eurusd_5m.png
+Saved eurusd_5m.png
+Loading eurusd_15m...
+EURUSD 15m price: 1.16237
+Watermark added to eurusd_15m.png
+Saved eurusd_15m.png
+Loading gbpusd_5m...
+GBPUSD 5m price: 1.34325
+Watermark added to gbpusd_5m.png
+Saved gbpusd_5m.png
+Loading gbpusd_15m...
+GBPUSD 15m price: 1.34319
+Watermark added to gbpusd_15m.png
+Saved gbpusd_15m.png
+Loading usdjpy_5m...
+USDJPY 5m price: 158.913
+Watermark added to usdjpy_5m.png
+Saved usdjpy_5m.png
+Loading usdjpy_15m...
+USDJPY 15m price: 158.908
+Watermark added to usdjpy_15m.png
+Saved usdjpy_15m.png
+Loading btcusd_5m...
+BTCUSD 5m price: 77470
+Watermark added to btcusd_5m.png
+Saved btcusd_5m.png
+Loading btcusd_15m...
+BTCUSD 15m price: 77472
+Watermark added to btcusd_15m.png
+Saved btcusd_15m.png
+Loading xauusd_5m...
+XAUUSD 5m price: 4545.295
+Watermark added to xauusd_5m.png
+Saved xauusd_5m.png
+Loading xauusd_15m...
+XAUUSD 15m price: 4545.85
+Watermark added to xauusd_15m.png
+Saved xauusd_15m.png
+Saved dashboard.png
+Saved index.html
+All screenshots complete.
