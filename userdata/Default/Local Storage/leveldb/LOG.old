@@ -1,3 +1,3 @@
-2026/05/20-21:00:04.408 263e Reusing MANIFEST /home/kidintheflannel/tradingcharts/userdata/Default/Local Storage/leveldb/MANIFEST-000001
-2026/05/20-21:00:04.476 263e Recovering log #29
-2026/05/20-21:00:04.477 263e Reusing old log /home/kidintheflannel/tradingcharts/userdata/Default/Local Storage/leveldb/000029.log 
+2026/05/20-21:15:04.942 2723 Reusing MANIFEST /home/kidintheflannel/tradingcharts/userdata/Default/Local Storage/leveldb/MANIFEST-000001
+2026/05/20-21:15:04.994 2723 Recovering log #29
+2026/05/20-21:15:05.017 2723 Reusing old log /home/kidintheflannel/tradingcharts/userdata/Default/Local Storage/leveldb/000029.log 
