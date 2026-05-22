@@ -1,5 +1,8 @@
-2026/05/21-20:30:06.413 795a Reusing MANIFEST /home/kidintheflannel/tradingcharts/userdata/Default/Session Storage/MANIFEST-000001
-2026/05/21-20:30:06.417 795a Recovering log #4
-2026/05/21-20:30:06.421 795a Reusing old log /home/kidintheflannel/tradingcharts/userdata/Default/Session Storage/000004.log 
-2026/05/21-20:32:26.717 795a Level-0 table #7: started
-2026/05/21-20:32:26.978 795a Level-0 table #7: 15889 bytes OK
+2026/05/21-20:45:09.866 7baf Reusing MANIFEST /home/kidintheflannel/tradingcharts/userdata/Default/Session Storage/MANIFEST-000001
+2026/05/21-20:45:09.873 7baf Recovering log #4
+2026/05/21-20:45:09.875 7baf Level-0 table #6: started
+2026/05/21-20:45:09.889 7baf Level-0 table #6: 15889 bytes OK
+2026/05/21-20:45:09.889 7baf Recovering log #6
+2026/05/21-20:45:09.889 7baf Reusing old log /home/kidintheflannel/tradingcharts/userdata/Default/Session Storage/000006.log 
+2026/05/21-20:45:09.903 7baf Delete type=0 #4
+2026/05/21-20:45:09.903 7baf Delete type=2 #7
