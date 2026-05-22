@@ -18379,3 +18379,36 @@ After doing this, you may fix the identity used for this commit with:
  create mode 100644 userdata/Default/IndexedDB/https_www.tradingview.com_0.indexeddb.leveldb/000062.ldb
 To https://github.com/LitteringLemons/tradercharts-dashboard.git
    95c8ebf04..229b173ef  main -> main
+[main 5f12b1679] Auto-update charts
+ Committer: kidintheflannel <kidintheflannel@penguin>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 117 files changed, 103 insertions(+), 33 deletions(-)
+ create mode 100644 userdata/Default/Cache/Cache_Data/01798c2f0903a9e5_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/10f8f664278646e1_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/1b16b6ff2c3f97ae_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/20ef8b2550bd8939_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/33579a4696abfb97_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/3fe303958ff60dd5_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/448a562bff316a23_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/84e4db07c8aa4fa8_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/a5eae30175438d9a_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/a60b1a342ad99897_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/bb780ae46a4cf74b_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/e12ab08edd92c35a_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/e3cf40e2a7833744_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/ed4ee140d862d9eb_0
+ create mode 100644 userdata/Default/Cache/Cache_Data/fd2b93f9bdc47737_0
+ create mode 100644 userdata/Default/Code Cache/js/51df91dde8bf1e8a_0
+ create mode 100644 userdata/Default/Code Cache/js/8ea231115554531e_0
+To https://github.com/LitteringLemons/tradercharts-dashboard.git
+   229b173ef..5f12b1679  main -> main
