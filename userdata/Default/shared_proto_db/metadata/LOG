@@ -1,3 +1,3 @@
-2026/05/22-20:45:08.540 5898 Reusing MANIFEST /home/kidintheflannel/tradingcharts/userdata/Default/shared_proto_db/metadata/MANIFEST-000001
-2026/05/22-20:45:08.541 5898 Recovering log #3
-2026/05/22-20:45:08.578 5898 Reusing old log /home/kidintheflannel/tradingcharts/userdata/Default/shared_proto_db/metadata/000003.log 
+2026/05/22-21:00:08.653 59ab Reusing MANIFEST /home/kidintheflannel/tradingcharts/userdata/Default/shared_proto_db/metadata/MANIFEST-000001
+2026/05/22-21:00:08.654 59ab Recovering log #3
+2026/05/22-21:00:08.668 59ab Reusing old log /home/kidintheflannel/tradingcharts/userdata/Default/shared_proto_db/metadata/000003.log 
