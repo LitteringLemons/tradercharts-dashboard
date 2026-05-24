@@ -20338,3 +20338,1876 @@ Saved xauusd_15m.png
 Saved dashboard.png
 Saved index.html
 All screenshots complete.
+Loading eurusd_5m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tradingview.com/chart/?symbol=FX:EURUSD&interval=5", waiting until "domcontentloaded"
+
+    at /home/kidintheflannel/tradingcharts/capture.js:178:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tradingview.com/chart/?symbol=FX:EURUSD&interval=5", waiting until "domcontentloaded"
+
+    at /home/kidintheflannel/tradingcharts/capture.js:178:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+Watermark added to eurusd_5m.png
+Saved eurusd_5m.png
+Loading eurusd_15m...
+EURUSD 15m price: 1.16017
+Watermark added to eurusd_15m.png
+Saved eurusd_15m.png
+Loading gbpusd_5m...
+GBPUSD 5m price: 1.34195
+Watermark added to gbpusd_5m.png
+Saved gbpusd_5m.png
+Loading gbpusd_15m...
+GBPUSD 15m price: 1.34195
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+
+    at /home/kidintheflannel/tradingcharts/capture.js:223:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+
+    at /home/kidintheflannel/tradingcharts/capture.js:223:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+Watermark added to eurusd_5m.png
+Saved eurusd_5m.png
+Loading eurusd_15m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+locator.innerText: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('body')
+
+    at /home/kidintheflannel/tradingcharts/capture.js:184:49 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+
+    at /home/kidintheflannel/tradingcharts/capture.js:223:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+Watermark added to eurusd_5m.png
+Saved eurusd_5m.png
+Loading eurusd_15m...
+EURUSD 15m price: 1.16017
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+
+    at /home/kidintheflannel/tradingcharts/capture.js:223:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+Watermark added to eurusd_5m.png
+Saved eurusd_5m.png
+Loading eurusd_15m...
+EURUSD 15m price: 1.16017
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+
+    at /home/kidintheflannel/tradingcharts/capture.js:223:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+Watermark added to eurusd_5m.png
+Saved eurusd_5m.png
+Loading eurusd_15m...
+EURUSD 15m price: 1.16017
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+
+    at /home/kidintheflannel/tradingcharts/capture.js:223:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+Watermark added to eurusd_5m.png
+Saved eurusd_5m.png
+Loading eurusd_15m...
+EURUSD 15m price: 1.16017
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+
+    at /home/kidintheflannel/tradingcharts/capture.js:223:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+
+    at /home/kidintheflannel/tradingcharts/capture.js:223:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+Watermark added to eurusd_5m.png
+Saved eurusd_5m.png
+Loading eurusd_15m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+locator.innerText: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('body')
+
+    at /home/kidintheflannel/tradingcharts/capture.js:184:49 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+Watermark added to eurusd_5m.png
+Saved eurusd_5m.png
+Loading eurusd_15m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+locator.innerText: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('body')
+
+    at /home/kidintheflannel/tradingcharts/capture.js:184:49 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+Watermark added to eurusd_5m.png
+Saved eurusd_5m.png
+Loading eurusd_15m...
+EURUSD 15m price: 1.16017
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+
+    at /home/kidintheflannel/tradingcharts/capture.js:223:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+Watermark added to eurusd_5m.png
+Saved eurusd_5m.png
+Loading eurusd_15m...
+EURUSD 15m price: 1.16017
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+
+    at /home/kidintheflannel/tradingcharts/capture.js:223:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+
+    at /home/kidintheflannel/tradingcharts/capture.js:223:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+
+    at /home/kidintheflannel/tradingcharts/capture.js:223:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tradingview.com/chart/?symbol=FX:EURUSD&interval=5", waiting until "domcontentloaded"
+
+    at /home/kidintheflannel/tradingcharts/capture.js:178:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+locator.innerText: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('body')
+
+    at /home/kidintheflannel/tradingcharts/capture.js:184:49 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+Watermark added to eurusd_5m.png
+Saved eurusd_5m.png
+Loading eurusd_15m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+locator.innerText: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('body')
+
+    at /home/kidintheflannel/tradingcharts/capture.js:184:49 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+
+    at /home/kidintheflannel/tradingcharts/capture.js:223:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+
+    at /home/kidintheflannel/tradingcharts/capture.js:223:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+
+    at /home/kidintheflannel/tradingcharts/capture.js:223:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tradingview.com/chart/?symbol=FX:EURUSD&interval=5", waiting until "domcontentloaded"
+
+    at /home/kidintheflannel/tradingcharts/capture.js:178:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+locator.innerText: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('body')
+
+    at /home/kidintheflannel/tradingcharts/capture.js:184:49 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tradingview.com/chart/?symbol=FX:EURUSD&interval=5", waiting until "domcontentloaded"
+
+    at /home/kidintheflannel/tradingcharts/capture.js:178:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+Watermark added to eurusd_5m.png
+Saved eurusd_5m.png
+Loading eurusd_15m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+locator.innerText: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('body')
+
+    at /home/kidintheflannel/tradingcharts/capture.js:184:49 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+
+    at /home/kidintheflannel/tradingcharts/capture.js:223:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+
+    at /home/kidintheflannel/tradingcharts/capture.js:223:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tradingview.com/chart/?symbol=FX:EURUSD&interval=5", waiting until "domcontentloaded"
+
+    at /home/kidintheflannel/tradingcharts/capture.js:178:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+Watermark added to eurusd_5m.png
+Saved eurusd_5m.png
+Loading eurusd_15m...
+EURUSD 15m price: 1.16017
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+
+    at /home/kidintheflannel/tradingcharts/capture.js:223:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+Watermark added to eurusd_5m.png
+Saved eurusd_5m.png
+Loading eurusd_15m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tradingview.com/chart/?symbol=FX:EURUSD&interval=15", waiting until "domcontentloaded"
+
+    at /home/kidintheflannel/tradingcharts/capture.js:178:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+
+    at /home/kidintheflannel/tradingcharts/capture.js:223:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+Watermark added to eurusd_5m.png
+Saved eurusd_5m.png
+Loading eurusd_15m...
+EURUSD 15m price: 1.16017
+Watermark added to eurusd_15m.png
+Saved eurusd_15m.png
+Loading gbpusd_5m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+locator.innerText: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('body')
+
+    at /home/kidintheflannel/tradingcharts/capture.js:184:49 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+Watermark added to eurusd_5m.png
+Saved eurusd_5m.png
+Loading eurusd_15m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+locator.innerText: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('body')
+
+    at /home/kidintheflannel/tradingcharts/capture.js:184:49 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+Watermark added to eurusd_5m.png
+Saved eurusd_5m.png
+Loading eurusd_15m...
+EURUSD 15m price: 1.16017
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+
+    at /home/kidintheflannel/tradingcharts/capture.js:223:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+locator.innerText: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('body')
+
+    at /home/kidintheflannel/tradingcharts/capture.js:184:49 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+
+    at /home/kidintheflannel/tradingcharts/capture.js:223:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+Watermark added to eurusd_5m.png
+Saved eurusd_5m.png
+Loading eurusd_15m...
+EURUSD 15m price: 1.16017
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+
+    at /home/kidintheflannel/tradingcharts/capture.js:223:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tradingview.com/chart/?symbol=FX:EURUSD&interval=5", waiting until "domcontentloaded"
+
+    at /home/kidintheflannel/tradingcharts/capture.js:178:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+
+    at /home/kidintheflannel/tradingcharts/capture.js:223:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+Watermark added to eurusd_5m.png
+Saved eurusd_5m.png
+Loading eurusd_15m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+locator.innerText: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('body')
+
+    at /home/kidintheflannel/tradingcharts/capture.js:184:49 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+locator.innerText: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('body')
+
+    at /home/kidintheflannel/tradingcharts/capture.js:184:49 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+locator.innerText: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('body')
+
+    at /home/kidintheflannel/tradingcharts/capture.js:184:49 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+
+    at /home/kidintheflannel/tradingcharts/capture.js:223:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+locator.innerText: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('body')
+
+    at /home/kidintheflannel/tradingcharts/capture.js:184:49 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+Watermark added to eurusd_5m.png
+Saved eurusd_5m.png
+Loading eurusd_15m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tradingview.com/chart/?symbol=FX:EURUSD&interval=15", waiting until "domcontentloaded"
+
+    at /home/kidintheflannel/tradingcharts/capture.js:178:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+
+    at /home/kidintheflannel/tradingcharts/capture.js:223:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+Watermark added to eurusd_5m.png
+Saved eurusd_5m.png
+Loading eurusd_15m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tradingview.com/chart/?symbol=FX:EURUSD&interval=15", waiting until "domcontentloaded"
+
+    at /home/kidintheflannel/tradingcharts/capture.js:178:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+locator.innerText: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('body')
+
+    at /home/kidintheflannel/tradingcharts/capture.js:184:49 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+locator.innerText: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('body')
+
+    at /home/kidintheflannel/tradingcharts/capture.js:184:49 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+
+    at /home/kidintheflannel/tradingcharts/capture.js:223:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+Watermark added to eurusd_5m.png
+Saved eurusd_5m.png
+Loading eurusd_15m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+locator.innerText: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('body')
+
+    at /home/kidintheflannel/tradingcharts/capture.js:184:49 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+locator.innerText: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('body')
+
+    at /home/kidintheflannel/tradingcharts/capture.js:184:49 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+
+    at /home/kidintheflannel/tradingcharts/capture.js:223:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+
+    at /home/kidintheflannel/tradingcharts/capture.js:223:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+locator.innerText: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('body')
+
+    at /home/kidintheflannel/tradingcharts/capture.js:184:49 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+Watermark added to eurusd_5m.png
+Saved eurusd_5m.png
+Loading eurusd_15m...
+EURUSD 15m price: 1.16017
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+
+    at /home/kidintheflannel/tradingcharts/capture.js:223:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+locator.innerText: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('body')
+
+    at /home/kidintheflannel/tradingcharts/capture.js:184:49 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+locator.innerText: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('body')
+
+    at /home/kidintheflannel/tradingcharts/capture.js:184:49 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+Watermark added to eurusd_5m.png
+Saved eurusd_5m.png
+Loading eurusd_15m...
+EURUSD 15m price: 1.16017
+Watermark added to eurusd_15m.png
+Saved eurusd_15m.png
+Loading gbpusd_5m...
+GBPUSD 5m price: 1.34195
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+
+    at /home/kidintheflannel/tradingcharts/capture.js:223:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+Watermark added to eurusd_5m.png
+Saved eurusd_5m.png
+Loading eurusd_15m...
+EURUSD 15m price: 1.16017
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+
+    at /home/kidintheflannel/tradingcharts/capture.js:223:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+Watermark added to eurusd_5m.png
+Saved eurusd_5m.png
+Loading eurusd_15m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+locator.innerText: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('body')
+
+    at /home/kidintheflannel/tradingcharts/capture.js:184:49 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+locator.innerText: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('body')
+
+    at /home/kidintheflannel/tradingcharts/capture.js:184:49 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+Watermark added to eurusd_5m.png
+Saved eurusd_5m.png
+Loading eurusd_15m...
+EURUSD 15m price: 1.16017
+Watermark added to eurusd_15m.png
+Saved eurusd_15m.png
+Loading gbpusd_5m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+locator.innerText: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('body')
+
+    at /home/kidintheflannel/tradingcharts/capture.js:184:49 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+Watermark added to eurusd_5m.png
+Saved eurusd_5m.png
+Loading eurusd_15m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+locator.innerText: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('body')
+
+    at /home/kidintheflannel/tradingcharts/capture.js:184:49 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+locator.innerText: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('body')
+
+    at /home/kidintheflannel/tradingcharts/capture.js:184:49 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+
+    at /home/kidintheflannel/tradingcharts/capture.js:223:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+
+    at /home/kidintheflannel/tradingcharts/capture.js:223:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+Watermark added to eurusd_5m.png
+Saved eurusd_5m.png
+Loading eurusd_15m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+locator.innerText: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('body')
+
+    at /home/kidintheflannel/tradingcharts/capture.js:184:49 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+Watermark added to eurusd_5m.png
+Saved eurusd_5m.png
+Loading eurusd_15m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+locator.innerText: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('body')
+
+    at /home/kidintheflannel/tradingcharts/capture.js:184:49 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+locator.innerText: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('body')
+
+    at /home/kidintheflannel/tradingcharts/capture.js:184:49 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+
+    at /home/kidintheflannel/tradingcharts/capture.js:223:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+Watermark added to eurusd_5m.png
+Saved eurusd_5m.png
+Loading eurusd_15m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+locator.innerText: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('body')
+
+    at /home/kidintheflannel/tradingcharts/capture.js:184:49 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+
+    at /home/kidintheflannel/tradingcharts/capture.js:223:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+locator.innerText: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('body')
+
+    at /home/kidintheflannel/tradingcharts/capture.js:184:49 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+locator.innerText: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('body')
+
+    at /home/kidintheflannel/tradingcharts/capture.js:184:49 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+
+    at /home/kidintheflannel/tradingcharts/capture.js:223:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+Watermark added to eurusd_5m.png
+Saved eurusd_5m.png
+Loading eurusd_15m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+locator.innerText: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('body')
+
+    at /home/kidintheflannel/tradingcharts/capture.js:184:49 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+Watermark added to eurusd_5m.png
+Saved eurusd_5m.png
+Loading eurusd_15m...
+EURUSD 15m price: 1.16017
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+
+    at /home/kidintheflannel/tradingcharts/capture.js:223:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+
+    at /home/kidintheflannel/tradingcharts/capture.js:223:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+
+    at /home/kidintheflannel/tradingcharts/capture.js:223:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+Watermark added to eurusd_5m.png
+Saved eurusd_5m.png
+Loading eurusd_15m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+locator.innerText: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('body')
+
+    at /home/kidintheflannel/tradingcharts/capture.js:184:49 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+locator.innerText: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('body')
+
+    at /home/kidintheflannel/tradingcharts/capture.js:184:49 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+
+    at /home/kidintheflannel/tradingcharts/capture.js:223:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+
+    at /home/kidintheflannel/tradingcharts/capture.js:223:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+Watermark added to eurusd_5m.png
+Saved eurusd_5m.png
+Loading eurusd_15m...
+EURUSD 15m price: 1.16017
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+
+    at /home/kidintheflannel/tradingcharts/capture.js:223:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+locator.innerText: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('body')
+
+    at /home/kidintheflannel/tradingcharts/capture.js:184:49 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+locator.innerText: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('body')
+
+    at /home/kidintheflannel/tradingcharts/capture.js:184:49 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+locator.innerText: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('body')
+
+    at /home/kidintheflannel/tradingcharts/capture.js:184:49 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+Watermark added to eurusd_5m.png
+Saved eurusd_5m.png
+Loading eurusd_15m...
+EURUSD 15m price: 1.16017
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+
+    at /home/kidintheflannel/tradingcharts/capture.js:223:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+Watermark added to eurusd_5m.png
+Saved eurusd_5m.png
+Loading eurusd_15m...
+EURUSD 15m price: 1.16017
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+
+    at /home/kidintheflannel/tradingcharts/capture.js:223:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+Watermark added to eurusd_5m.png
+Saved eurusd_5m.png
+Loading eurusd_15m...
+WARNING: EURUSD 15m = UNAVAILABLE
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+
+    at /home/kidintheflannel/tradingcharts/capture.js:223:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+Watermark added to eurusd_5m.png
+Saved eurusd_5m.png
+Loading eurusd_15m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tradingview.com/chart/?symbol=FX:EURUSD&interval=15", waiting until "domcontentloaded"
+
+    at /home/kidintheflannel/tradingcharts/capture.js:178:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+Watermark added to eurusd_5m.png
+Saved eurusd_5m.png
+Loading eurusd_15m...
+EURUSD 15m price: 1.16017
+Watermark added to eurusd_15m.png
+Saved eurusd_15m.png
+Loading gbpusd_5m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+locator.innerText: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('body')
+
+    at /home/kidintheflannel/tradingcharts/capture.js:184:49 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+Watermark added to eurusd_5m.png
+Saved eurusd_5m.png
+Loading eurusd_15m...
+EURUSD 15m price: 1.16017
+Watermark added to eurusd_15m.png
+Saved eurusd_15m.png
+Loading gbpusd_5m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+locator.innerText: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('body')
+
+    at /home/kidintheflannel/tradingcharts/capture.js:184:49 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+Watermark added to eurusd_5m.png
+Saved eurusd_5m.png
+Loading eurusd_15m...
+EURUSD 15m price: 1.16017
+Watermark added to eurusd_15m.png
+Saved eurusd_15m.png
+Loading gbpusd_5m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+locator.innerText: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('body')
+
+    at /home/kidintheflannel/tradingcharts/capture.js:184:49 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+locator.innerText: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('body')
+
+    at /home/kidintheflannel/tradingcharts/capture.js:184:49 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+locator.innerText: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('body')
+
+    at /home/kidintheflannel/tradingcharts/capture.js:184:49 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+Watermark added to eurusd_5m.png
+Saved eurusd_5m.png
+Loading eurusd_15m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+locator.innerText: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('body')
+
+    at /home/kidintheflannel/tradingcharts/capture.js:184:49 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+locator.innerText: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('body')
+
+    at /home/kidintheflannel/tradingcharts/capture.js:184:49 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+Watermark added to eurusd_5m.png
+Saved eurusd_5m.png
+Loading eurusd_15m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+locator.innerText: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('body')
+
+    at /home/kidintheflannel/tradingcharts/capture.js:184:49 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+Watermark added to eurusd_5m.png
+Saved eurusd_5m.png
+Loading eurusd_15m...
+EURUSD 15m price: 1.16017
+Watermark added to eurusd_15m.png
+Saved eurusd_15m.png
+Loading gbpusd_5m...
+GBPUSD 5m price: 1.34195
+Watermark added to gbpusd_5m.png
+Saved gbpusd_5m.png
+Loading gbpusd_15m...
+GBPUSD 15m price: 1.34195
+Watermark added to gbpusd_15m.png
+Saved gbpusd_15m.png
+Loading usdjpy_5m...
+USDJPY 5m price: 159.176
+Watermark added to usdjpy_5m.png
+Saved usdjpy_5m.png
+Loading usdjpy_15m...
+USDJPY 15m price: 159.176
+Watermark added to usdjpy_15m.png
+Saved usdjpy_15m.png
+Loading btcusd_5m...
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+locator.innerText: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('body')
+
+    at /home/kidintheflannel/tradingcharts/capture.js:184:49 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+Watermark added to eurusd_5m.png
+Saved eurusd_5m.png
+Loading eurusd_15m...
+EURUSD 15m price: 1.16017
+Watermark added to eurusd_15m.png
+Saved eurusd_15m.png
+Loading gbpusd_5m...
+GBPUSD 5m price: 1.34195
+Watermark added to gbpusd_5m.png
+Saved gbpusd_5m.png
+Loading gbpusd_15m...
+GBPUSD 15m price: 1.34195
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+
+    at /home/kidintheflannel/tradingcharts/capture.js:223:16 {
+  name: 'TimeoutError'
+}
+
+Node.js v18.20.4
+Loading eurusd_5m...
+EURUSD 5m price: 1.16017
+Watermark added to eurusd_5m.png
+Saved eurusd_5m.png
+Loading eurusd_15m...
+EURUSD 15m price: 1.16017
+Watermark added to eurusd_15m.png
+Saved eurusd_15m.png
+Loading gbpusd_5m...
+GBPUSD 5m price: 1.34195
+Watermark added to gbpusd_5m.png
+Saved gbpusd_5m.png
+Loading gbpusd_15m...
+GBPUSD 15m price: 1.34195
+Watermark added to gbpusd_15m.png
+Saved gbpusd_15m.png
+Loading usdjpy_5m...
+USDJPY 5m price: 159.176
+Watermark added to usdjpy_5m.png
+Saved usdjpy_5m.png
+Loading usdjpy_15m...
+USDJPY 15m price: 159.176
+Watermark added to usdjpy_15m.png
+Saved usdjpy_15m.png
+Loading btcusd_5m...
+BTCUSD 5m price: 76713
+Watermark added to btcusd_5m.png
+Saved btcusd_5m.png
+Loading btcusd_15m...
+BTCUSD 15m price: 76713
+Watermark added to btcusd_15m.png
+Saved btcusd_15m.png
+Loading xauusd_5m...
+XAUUSD 5m price: 4509.69
+Watermark added to xauusd_5m.png
+Saved xauusd_5m.png
+Loading xauusd_15m...
+XAUUSD 15m price: 4509.69
+Watermark added to xauusd_15m.png
+Saved xauusd_15m.png
+Saved dashboard.png
+Saved index.html
+All screenshots complete.
